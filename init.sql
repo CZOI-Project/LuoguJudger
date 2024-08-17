@@ -10,4 +10,3 @@ create table if not exists tb_link(
     pid varchar(255) not null,
     username varchar(255) not null
 );
-

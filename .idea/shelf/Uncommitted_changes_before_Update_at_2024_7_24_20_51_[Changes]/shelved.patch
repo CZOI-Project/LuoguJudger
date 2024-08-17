@@ -1,0 +1,4163 @@
+Index: .idea/dataSources.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dataSources.xml b/.idea/dataSources.xml
+new file mode 100644
+--- /dev/null	(date 1721722909967)
++++ b/.idea/dataSources.xml	(date 1721722909967)
+@@ -0,0 +1,19 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
++    <data-source source="LOCAL" name="@localhost" uuid="ef217d7d-94d0-4d9a-9d6c-951bad244125">
++      <driver-ref>mysql.8</driver-ref>
++      <synchronize>true</synchronize>
++      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
++      <jdbc-url>jdbc:mysql://localhost:3306/</jdbc-url>
++      <working-dir>$ProjectFileDir$</working-dir>
++    </data-source>
++    <data-source source="LOCAL" name="database" uuid="8fd95cb0-9a3a-48f0-bf3f-f6323cbbdf17">
++      <driver-ref>sqlite.xerial</driver-ref>
++      <synchronize>true</synchronize>
++      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
++      <jdbc-url>jdbc:sqlite:C:\Users\Caiwen\OneJudger\database.db</jdbc-url>
++      <working-dir>$ProjectFileDir$</working-dir>
++    </data-source>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/dataSources.local.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dataSources.local.xml b/.idea/dataSources.local.xml
+new file mode 100644
+--- /dev/null	(date 1721723268694)
++++ b/.idea/dataSources.local.xml	(date 1721723268694)
+@@ -0,0 +1,31 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="dataSourceStorageLocal" created-in="PY-241.18034.82">
++    <data-source name="@localhost" uuid="ef217d7d-94d0-4d9a-9d6c-951bad244125">
++      <database-info product="MySQL" version="8.0.37-0ubuntu0.22.04.3" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-j-8.2.0 (Revision: 06a1f724497fd81c6a659131fda822c9e5085b6c)" dbms="MYSQL" exact-version="8.0.37" exact-driver-version="8.2">
++        <extra-name-characters>#@</extra-name-characters>
++        <identifier-quote-string>`</identifier-quote-string>
++      </database-info>
++      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
++      <secret-storage>master_key</secret-storage>
++      <user-name>root</user-name>
++      <schema-mapping>
++        <introspection-scope>
++          <node kind="schema" qname="@" />
++        </introspection-scope>
++      </schema-mapping>
++    </data-source>
++    <data-source name="database" uuid="8fd95cb0-9a3a-48f0-bf3f-f6323cbbdf17">
++      <database-info product="SQLite" version="3.45.1" jdbc-version="4.2" driver-name="SQLite JDBC" driver-version="3.45.1.0" dbms="SQLITE" exact-version="3.45.1" exact-driver-version="3.45">
++        <identifier-quote-string>&quot;</identifier-quote-string>
++      </database-info>
++      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
++      <auth-provider>no-auth</auth-provider>
++      <schema-mapping>
++        <introspection-scope>
++          <node kind="schema" qname="@" />
++        </introspection-scope>
++      </schema-mapping>
++    </data-source>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/dataSources/ef217d7d-94d0-4d9a-9d6c-951bad244125.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dataSources/ef217d7d-94d0-4d9a-9d6c-951bad244125.xml b/.idea/dataSources/ef217d7d-94d0-4d9a-9d6c-951bad244125.xml
+new file mode 100644
+--- /dev/null	(date 1720334751841)
++++ b/.idea/dataSources/ef217d7d-94d0-4d9a-9d6c-951bad244125.xml	(date 1720334751841)
+@@ -0,0 +1,1103 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<dataSource name="@localhost">
++  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.52">
++    <root id="1">
++      <DefaultCasing>exact</DefaultCasing>
++      <DefaultEngine>InnoDB</DefaultEngine>
++      <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
++      <Grants>|root||debian-sys-maint|localhost|ALTER|G
++|root||root|localhost|ALTER|G
++|root||debian-sys-maint|localhost|ALTER ROUTINE|G
++|root||root|localhost|ALTER ROUTINE|G
++|root||debian-sys-maint|localhost|APPLICATION_PASSWORD_ADMIN|G
++|root||root|localhost|APPLICATION_PASSWORD_ADMIN|G
++|root||mysql.infoschema|localhost|AUDIT_ABORT_EXEMPT|G
++|root||mysql.session|localhost|AUDIT_ABORT_EXEMPT|G
++|root||mysql.sys|localhost|AUDIT_ABORT_EXEMPT|G
++|root||root|localhost|AUDIT_ABORT_EXEMPT|G
++|root||debian-sys-maint|localhost|AUDIT_ADMIN|G
++|root||root|localhost|AUDIT_ADMIN|G
++|root||debian-sys-maint|localhost|AUTHENTICATION_POLICY_ADMIN|G
++|root||mysql.session|localhost|AUTHENTICATION_POLICY_ADMIN|G
++|root||root|localhost|AUTHENTICATION_POLICY_ADMIN|G
++|root||debian-sys-maint|localhost|BACKUP_ADMIN|G
++|root||mysql.session|localhost|BACKUP_ADMIN|G
++|root||root|localhost|BACKUP_ADMIN|G
++|root||debian-sys-maint|localhost|BINLOG_ADMIN|G
++|root||root|localhost|BINLOG_ADMIN|G
++|root||debian-sys-maint|localhost|BINLOG_ENCRYPTION_ADMIN|G
++|root||root|localhost|BINLOG_ENCRYPTION_ADMIN|G
++|root||debian-sys-maint|localhost|CLONE_ADMIN|G
++|root||mysql.session|localhost|CLONE_ADMIN|G
++|root||root|localhost|CLONE_ADMIN|G
++|root||debian-sys-maint|localhost|CONNECTION_ADMIN|G
++|root||mysql.session|localhost|CONNECTION_ADMIN|G
++|root||root|localhost|CONNECTION_ADMIN|G
++|root||debian-sys-maint|localhost|CREATE|G
++|root||root|localhost|CREATE|G
++|root||debian-sys-maint|localhost|CREATE ROLE|G
++|root||root|localhost|CREATE ROLE|G
++|root||debian-sys-maint|localhost|CREATE ROUTINE|G
++|root||root|localhost|CREATE ROUTINE|G
++|root||debian-sys-maint|localhost|CREATE TABLESPACE|G
++|root||root|localhost|CREATE TABLESPACE|G
++|root||debian-sys-maint|localhost|CREATE TEMPORARY TABLES|G
++|root||root|localhost|CREATE TEMPORARY TABLES|G
++|root||debian-sys-maint|localhost|CREATE USER|G
++|root||root|localhost|CREATE USER|G
++|root||debian-sys-maint|localhost|CREATE VIEW|G
++|root||root|localhost|CREATE VIEW|G
++|root||debian-sys-maint|localhost|DELETE|G
++|root||root|localhost|DELETE|G
++|root||debian-sys-maint|localhost|DROP|G
++|root||root|localhost|DROP|G
++|root||debian-sys-maint|localhost|DROP ROLE|G
++|root||root|localhost|DROP ROLE|G
++|root||debian-sys-maint|localhost|ENCRYPTION_KEY_ADMIN|G
++|root||root|localhost|ENCRYPTION_KEY_ADMIN|G
++|root||debian-sys-maint|localhost|EVENT|G
++|root||root|localhost|EVENT|G
++|root||debian-sys-maint|localhost|EXECUTE|G
++|root||root|localhost|EXECUTE|G
++|root||debian-sys-maint|localhost|FILE|G
++|root||root|localhost|FILE|G
++|root||mysql.infoschema|localhost|FIREWALL_EXEMPT|G
++|root||mysql.session|localhost|FIREWALL_EXEMPT|G
++|root||mysql.sys|localhost|FIREWALL_EXEMPT|G
++|root||root|localhost|FIREWALL_EXEMPT|G
++|root||debian-sys-maint|localhost|FLUSH_OPTIMIZER_COSTS|G
++|root||root|localhost|FLUSH_OPTIMIZER_COSTS|G
++|root||debian-sys-maint|localhost|FLUSH_STATUS|G
++|root||root|localhost|FLUSH_STATUS|G
++|root||debian-sys-maint|localhost|FLUSH_TABLES|G
++|root||root|localhost|FLUSH_TABLES|G
++|root||debian-sys-maint|localhost|FLUSH_USER_RESOURCES|G
++|root||root|localhost|FLUSH_USER_RESOURCES|G
++|root||debian-sys-maint|localhost|GROUP_REPLICATION_ADMIN|G
++|root||root|localhost|GROUP_REPLICATION_ADMIN|G
++|root||debian-sys-maint|localhost|GROUP_REPLICATION_STREAM|G
++|root||root|localhost|GROUP_REPLICATION_STREAM|G
++|root||debian-sys-maint|localhost|INDEX|G
++|root||root|localhost|INDEX|G
++|root||debian-sys-maint|localhost|INNODB_REDO_LOG_ARCHIVE|G
++|root||root|localhost|INNODB_REDO_LOG_ARCHIVE|G
++|root||debian-sys-maint|localhost|INNODB_REDO_LOG_ENABLE|G
++|root||root|localhost|INNODB_REDO_LOG_ENABLE|G
++|root||debian-sys-maint|localhost|INSERT|G
++|root||root|localhost|INSERT|G
++|root||debian-sys-maint|localhost|LOCK TABLES|G
++|root||root|localhost|LOCK TABLES|G
++|root||debian-sys-maint|localhost|PASSWORDLESS_USER_ADMIN|G
++|root||root|localhost|PASSWORDLESS_USER_ADMIN|G
++|root||debian-sys-maint|localhost|PERSIST_RO_VARIABLES_ADMIN|G
++|root||mysql.session|localhost|PERSIST_RO_VARIABLES_ADMIN|G
++|root||root|localhost|PERSIST_RO_VARIABLES_ADMIN|G
++|root||debian-sys-maint|localhost|PROCESS|G
++|root||root|localhost|PROCESS|G
++|root||debian-sys-maint|localhost|REFERENCES|G
++|root||root|localhost|REFERENCES|G
++|root||debian-sys-maint|localhost|RELOAD|G
++|root||root|localhost|RELOAD|G
++|root||debian-sys-maint|localhost|REPLICATION CLIENT|G
++|root||root|localhost|REPLICATION CLIENT|G
++|root||debian-sys-maint|localhost|REPLICATION SLAVE|G
++|root||root|localhost|REPLICATION SLAVE|G
++|root||debian-sys-maint|localhost|REPLICATION_APPLIER|G
++|root||root|localhost|REPLICATION_APPLIER|G
++|root||debian-sys-maint|localhost|REPLICATION_SLAVE_ADMIN|G
++|root||root|localhost|REPLICATION_SLAVE_ADMIN|G
++|root||debian-sys-maint|localhost|RESOURCE_GROUP_ADMIN|G
++|root||root|localhost|RESOURCE_GROUP_ADMIN|G
++|root||debian-sys-maint|localhost|RESOURCE_GROUP_USER|G
++|root||root|localhost|RESOURCE_GROUP_USER|G
++|root||debian-sys-maint|localhost|ROLE_ADMIN|G
++|root||root|localhost|ROLE_ADMIN|G
++|root||debian-sys-maint|localhost|SELECT|G
++|root||mysql.infoschema|localhost|SELECT|G
++|root||root|localhost|SELECT|G
++|root||debian-sys-maint|localhost|SENSITIVE_VARIABLES_OBSERVER|G
++|root||root|localhost|SENSITIVE_VARIABLES_OBSERVER|G
++|root||debian-sys-maint|localhost|SERVICE_CONNECTION_ADMIN|G
++|root||root|localhost|SERVICE_CONNECTION_ADMIN|G
++|root||debian-sys-maint|localhost|SESSION_VARIABLES_ADMIN|G
++|root||mysql.session|localhost|SESSION_VARIABLES_ADMIN|G
++|root||root|localhost|SESSION_VARIABLES_ADMIN|G
++|root||debian-sys-maint|localhost|SET_USER_ID|G
++|root||root|localhost|SET_USER_ID|G
++|root||debian-sys-maint|localhost|SHOW DATABASES|G
++|root||root|localhost|SHOW DATABASES|G
++|root||debian-sys-maint|localhost|SHOW VIEW|G
++|root||root|localhost|SHOW VIEW|G
++|root||debian-sys-maint|localhost|SHOW_ROUTINE|G
++|root||root|localhost|SHOW_ROUTINE|G
++|root||debian-sys-maint|localhost|SHUTDOWN|G
++|root||mysql.session|localhost|SHUTDOWN|G
++|root||root|localhost|SHUTDOWN|G
++|root||debian-sys-maint|localhost|SUPER|G
++|root||mysql.session|localhost|SUPER|G
++|root||root|localhost|SUPER|G
++|root||debian-sys-maint|localhost|SYSTEM_USER|G
++|root||mysql.infoschema|localhost|SYSTEM_USER|G
++|root||mysql.session|localhost|SYSTEM_USER|G
++|root||mysql.sys|localhost|SYSTEM_USER|G
++|root||root|localhost|SYSTEM_USER|G
++|root||debian-sys-maint|localhost|SYSTEM_VARIABLES_ADMIN|G
++|root||mysql.session|localhost|SYSTEM_VARIABLES_ADMIN|G
++|root||root|localhost|SYSTEM_VARIABLES_ADMIN|G
++|root||debian-sys-maint|localhost|TABLE_ENCRYPTION_ADMIN|G
++|root||root|localhost|TABLE_ENCRYPTION_ADMIN|G
++|root||debian-sys-maint|localhost|TELEMETRY_LOG_ADMIN|G
++|root||root|localhost|TELEMETRY_LOG_ADMIN|G
++|root||debian-sys-maint|localhost|TRIGGER|G
++|root||root|localhost|TRIGGER|G
++|root||debian-sys-maint|localhost|UPDATE|G
++|root||root|localhost|UPDATE|G
++|root||debian-sys-maint|localhost|XA_RECOVER_ADMIN|G
++|root||root|localhost|XA_RECOVER_ADMIN|G
++|root||debian-sys-maint|localhost|grant option|G
++|root||root|localhost|grant option|G
++performance_schema|schema||mysql.session|localhost|SELECT|G
++sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
++      <ServerVersion>8.0.37</ServerVersion>
++    </root>
++    <collation id="2" parent="1" name="armscii8_bin">
++      <Charset>armscii8</Charset>
++    </collation>
++    <collation id="3" parent="1" name="armscii8_general_ci">
++      <Charset>armscii8</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="4" parent="1" name="ascii_bin">
++      <Charset>ascii</Charset>
++    </collation>
++    <collation id="5" parent="1" name="ascii_general_ci">
++      <Charset>ascii</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="6" parent="1" name="big5_bin">
++      <Charset>big5</Charset>
++    </collation>
++    <collation id="7" parent="1" name="big5_chinese_ci">
++      <Charset>big5</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="8" parent="1" name="binary">
++      <Charset>binary</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="9" parent="1" name="cp1250_bin">
++      <Charset>cp1250</Charset>
++    </collation>
++    <collation id="10" parent="1" name="cp1250_croatian_ci">
++      <Charset>cp1250</Charset>
++    </collation>
++    <collation id="11" parent="1" name="cp1250_czech_cs">
++      <Charset>cp1250</Charset>
++    </collation>
++    <collation id="12" parent="1" name="cp1250_general_ci">
++      <Charset>cp1250</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="13" parent="1" name="cp1250_polish_ci">
++      <Charset>cp1250</Charset>
++    </collation>
++    <collation id="14" parent="1" name="cp1251_bin">
++      <Charset>cp1251</Charset>
++    </collation>
++    <collation id="15" parent="1" name="cp1251_bulgarian_ci">
++      <Charset>cp1251</Charset>
++    </collation>
++    <collation id="16" parent="1" name="cp1251_general_ci">
++      <Charset>cp1251</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="17" parent="1" name="cp1251_general_cs">
++      <Charset>cp1251</Charset>
++    </collation>
++    <collation id="18" parent="1" name="cp1251_ukrainian_ci">
++      <Charset>cp1251</Charset>
++    </collation>
++    <collation id="19" parent="1" name="cp1256_bin">
++      <Charset>cp1256</Charset>
++    </collation>
++    <collation id="20" parent="1" name="cp1256_general_ci">
++      <Charset>cp1256</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="21" parent="1" name="cp1257_bin">
++      <Charset>cp1257</Charset>
++    </collation>
++    <collation id="22" parent="1" name="cp1257_general_ci">
++      <Charset>cp1257</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="23" parent="1" name="cp1257_lithuanian_ci">
++      <Charset>cp1257</Charset>
++    </collation>
++    <collation id="24" parent="1" name="cp850_bin">
++      <Charset>cp850</Charset>
++    </collation>
++    <collation id="25" parent="1" name="cp850_general_ci">
++      <Charset>cp850</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="26" parent="1" name="cp852_bin">
++      <Charset>cp852</Charset>
++    </collation>
++    <collation id="27" parent="1" name="cp852_general_ci">
++      <Charset>cp852</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="28" parent="1" name="cp866_bin">
++      <Charset>cp866</Charset>
++    </collation>
++    <collation id="29" parent="1" name="cp866_general_ci">
++      <Charset>cp866</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="30" parent="1" name="cp932_bin">
++      <Charset>cp932</Charset>
++    </collation>
++    <collation id="31" parent="1" name="cp932_japanese_ci">
++      <Charset>cp932</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="32" parent="1" name="dec8_bin">
++      <Charset>dec8</Charset>
++    </collation>
++    <collation id="33" parent="1" name="dec8_swedish_ci">
++      <Charset>dec8</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="34" parent="1" name="eucjpms_bin">
++      <Charset>eucjpms</Charset>
++    </collation>
++    <collation id="35" parent="1" name="eucjpms_japanese_ci">
++      <Charset>eucjpms</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="36" parent="1" name="euckr_bin">
++      <Charset>euckr</Charset>
++    </collation>
++    <collation id="37" parent="1" name="euckr_korean_ci">
++      <Charset>euckr</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="38" parent="1" name="gb18030_bin">
++      <Charset>gb18030</Charset>
++    </collation>
++    <collation id="39" parent="1" name="gb18030_chinese_ci">
++      <Charset>gb18030</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="40" parent="1" name="gb18030_unicode_520_ci">
++      <Charset>gb18030</Charset>
++    </collation>
++    <collation id="41" parent="1" name="gb2312_bin">
++      <Charset>gb2312</Charset>
++    </collation>
++    <collation id="42" parent="1" name="gb2312_chinese_ci">
++      <Charset>gb2312</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="43" parent="1" name="gbk_bin">
++      <Charset>gbk</Charset>
++    </collation>
++    <collation id="44" parent="1" name="gbk_chinese_ci">
++      <Charset>gbk</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="45" parent="1" name="geostd8_bin">
++      <Charset>geostd8</Charset>
++    </collation>
++    <collation id="46" parent="1" name="geostd8_general_ci">
++      <Charset>geostd8</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="47" parent="1" name="greek_bin">
++      <Charset>greek</Charset>
++    </collation>
++    <collation id="48" parent="1" name="greek_general_ci">
++      <Charset>greek</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="49" parent="1" name="hebrew_bin">
++      <Charset>hebrew</Charset>
++    </collation>
++    <collation id="50" parent="1" name="hebrew_general_ci">
++      <Charset>hebrew</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="51" parent="1" name="hp8_bin">
++      <Charset>hp8</Charset>
++    </collation>
++    <collation id="52" parent="1" name="hp8_english_ci">
++      <Charset>hp8</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="53" parent="1" name="keybcs2_bin">
++      <Charset>keybcs2</Charset>
++    </collation>
++    <collation id="54" parent="1" name="keybcs2_general_ci">
++      <Charset>keybcs2</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="55" parent="1" name="koi8r_bin">
++      <Charset>koi8r</Charset>
++    </collation>
++    <collation id="56" parent="1" name="koi8r_general_ci">
++      <Charset>koi8r</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="57" parent="1" name="koi8u_bin">
++      <Charset>koi8u</Charset>
++    </collation>
++    <collation id="58" parent="1" name="koi8u_general_ci">
++      <Charset>koi8u</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="59" parent="1" name="latin1_bin">
++      <Charset>latin1</Charset>
++    </collation>
++    <collation id="60" parent="1" name="latin1_danish_ci">
++      <Charset>latin1</Charset>
++    </collation>
++    <collation id="61" parent="1" name="latin1_general_ci">
++      <Charset>latin1</Charset>
++    </collation>
++    <collation id="62" parent="1" name="latin1_general_cs">
++      <Charset>latin1</Charset>
++    </collation>
++    <collation id="63" parent="1" name="latin1_german1_ci">
++      <Charset>latin1</Charset>
++    </collation>
++    <collation id="64" parent="1" name="latin1_german2_ci">
++      <Charset>latin1</Charset>
++    </collation>
++    <collation id="65" parent="1" name="latin1_spanish_ci">
++      <Charset>latin1</Charset>
++    </collation>
++    <collation id="66" parent="1" name="latin1_swedish_ci">
++      <Charset>latin1</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="67" parent="1" name="latin2_bin">
++      <Charset>latin2</Charset>
++    </collation>
++    <collation id="68" parent="1" name="latin2_croatian_ci">
++      <Charset>latin2</Charset>
++    </collation>
++    <collation id="69" parent="1" name="latin2_czech_cs">
++      <Charset>latin2</Charset>
++    </collation>
++    <collation id="70" parent="1" name="latin2_general_ci">
++      <Charset>latin2</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="71" parent="1" name="latin2_hungarian_ci">
++      <Charset>latin2</Charset>
++    </collation>
++    <collation id="72" parent="1" name="latin5_bin">
++      <Charset>latin5</Charset>
++    </collation>
++    <collation id="73" parent="1" name="latin5_turkish_ci">
++      <Charset>latin5</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="74" parent="1" name="latin7_bin">
++      <Charset>latin7</Charset>
++    </collation>
++    <collation id="75" parent="1" name="latin7_estonian_cs">
++      <Charset>latin7</Charset>
++    </collation>
++    <collation id="76" parent="1" name="latin7_general_ci">
++      <Charset>latin7</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="77" parent="1" name="latin7_general_cs">
++      <Charset>latin7</Charset>
++    </collation>
++    <collation id="78" parent="1" name="macce_bin">
++      <Charset>macce</Charset>
++    </collation>
++    <collation id="79" parent="1" name="macce_general_ci">
++      <Charset>macce</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="80" parent="1" name="macroman_bin">
++      <Charset>macroman</Charset>
++    </collation>
++    <collation id="81" parent="1" name="macroman_general_ci">
++      <Charset>macroman</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="82" parent="1" name="sjis_bin">
++      <Charset>sjis</Charset>
++    </collation>
++    <collation id="83" parent="1" name="sjis_japanese_ci">
++      <Charset>sjis</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="84" parent="1" name="swe7_bin">
++      <Charset>swe7</Charset>
++    </collation>
++    <collation id="85" parent="1" name="swe7_swedish_ci">
++      <Charset>swe7</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="86" parent="1" name="tis620_bin">
++      <Charset>tis620</Charset>
++    </collation>
++    <collation id="87" parent="1" name="tis620_thai_ci">
++      <Charset>tis620</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="88" parent="1" name="ucs2_bin">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="89" parent="1" name="ucs2_croatian_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="90" parent="1" name="ucs2_czech_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="91" parent="1" name="ucs2_danish_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="92" parent="1" name="ucs2_esperanto_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="93" parent="1" name="ucs2_estonian_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="94" parent="1" name="ucs2_general_ci">
++      <Charset>ucs2</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="95" parent="1" name="ucs2_general_mysql500_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="96" parent="1" name="ucs2_german2_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="97" parent="1" name="ucs2_hungarian_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="98" parent="1" name="ucs2_icelandic_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="99" parent="1" name="ucs2_latvian_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="100" parent="1" name="ucs2_lithuanian_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="101" parent="1" name="ucs2_persian_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="102" parent="1" name="ucs2_polish_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="103" parent="1" name="ucs2_roman_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="104" parent="1" name="ucs2_romanian_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="105" parent="1" name="ucs2_sinhala_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="106" parent="1" name="ucs2_slovak_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="107" parent="1" name="ucs2_slovenian_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="108" parent="1" name="ucs2_spanish2_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="109" parent="1" name="ucs2_spanish_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="110" parent="1" name="ucs2_swedish_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="111" parent="1" name="ucs2_turkish_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="112" parent="1" name="ucs2_unicode_520_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="113" parent="1" name="ucs2_unicode_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="114" parent="1" name="ucs2_vietnamese_ci">
++      <Charset>ucs2</Charset>
++    </collation>
++    <collation id="115" parent="1" name="ujis_bin">
++      <Charset>ujis</Charset>
++    </collation>
++    <collation id="116" parent="1" name="ujis_japanese_ci">
++      <Charset>ujis</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="117" parent="1" name="utf16_bin">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="118" parent="1" name="utf16_croatian_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="119" parent="1" name="utf16_czech_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="120" parent="1" name="utf16_danish_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="121" parent="1" name="utf16_esperanto_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="122" parent="1" name="utf16_estonian_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="123" parent="1" name="utf16_general_ci">
++      <Charset>utf16</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="124" parent="1" name="utf16_german2_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="125" parent="1" name="utf16_hungarian_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="126" parent="1" name="utf16_icelandic_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="127" parent="1" name="utf16_latvian_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="128" parent="1" name="utf16_lithuanian_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="129" parent="1" name="utf16_persian_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="130" parent="1" name="utf16_polish_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="131" parent="1" name="utf16_roman_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="132" parent="1" name="utf16_romanian_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="133" parent="1" name="utf16_sinhala_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="134" parent="1" name="utf16_slovak_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="135" parent="1" name="utf16_slovenian_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="136" parent="1" name="utf16_spanish2_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="137" parent="1" name="utf16_spanish_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="138" parent="1" name="utf16_swedish_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="139" parent="1" name="utf16_turkish_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="140" parent="1" name="utf16_unicode_520_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="141" parent="1" name="utf16_unicode_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="142" parent="1" name="utf16_vietnamese_ci">
++      <Charset>utf16</Charset>
++    </collation>
++    <collation id="143" parent="1" name="utf16le_bin">
++      <Charset>utf16le</Charset>
++    </collation>
++    <collation id="144" parent="1" name="utf16le_general_ci">
++      <Charset>utf16le</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="145" parent="1" name="utf32_bin">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="146" parent="1" name="utf32_croatian_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="147" parent="1" name="utf32_czech_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="148" parent="1" name="utf32_danish_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="149" parent="1" name="utf32_esperanto_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="150" parent="1" name="utf32_estonian_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="151" parent="1" name="utf32_general_ci">
++      <Charset>utf32</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="152" parent="1" name="utf32_german2_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="153" parent="1" name="utf32_hungarian_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="154" parent="1" name="utf32_icelandic_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="155" parent="1" name="utf32_latvian_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="156" parent="1" name="utf32_lithuanian_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="157" parent="1" name="utf32_persian_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="158" parent="1" name="utf32_polish_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="159" parent="1" name="utf32_roman_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="160" parent="1" name="utf32_romanian_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="161" parent="1" name="utf32_sinhala_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="162" parent="1" name="utf32_slovak_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="163" parent="1" name="utf32_slovenian_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="164" parent="1" name="utf32_spanish2_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="165" parent="1" name="utf32_spanish_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="166" parent="1" name="utf32_swedish_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="167" parent="1" name="utf32_turkish_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="168" parent="1" name="utf32_unicode_520_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="169" parent="1" name="utf32_unicode_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="170" parent="1" name="utf32_vietnamese_ci">
++      <Charset>utf32</Charset>
++    </collation>
++    <collation id="171" parent="1" name="utf8mb3_bin">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="172" parent="1" name="utf8mb3_croatian_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="173" parent="1" name="utf8mb3_czech_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="174" parent="1" name="utf8mb3_danish_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="175" parent="1" name="utf8mb3_esperanto_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="176" parent="1" name="utf8mb3_estonian_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="177" parent="1" name="utf8mb3_general_ci">
++      <Charset>utf8mb3</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="178" parent="1" name="utf8mb3_general_mysql500_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="179" parent="1" name="utf8mb3_german2_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="180" parent="1" name="utf8mb3_hungarian_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="181" parent="1" name="utf8mb3_icelandic_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="182" parent="1" name="utf8mb3_latvian_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="183" parent="1" name="utf8mb3_lithuanian_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="184" parent="1" name="utf8mb3_persian_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="185" parent="1" name="utf8mb3_polish_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="186" parent="1" name="utf8mb3_roman_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="187" parent="1" name="utf8mb3_romanian_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="188" parent="1" name="utf8mb3_sinhala_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="189" parent="1" name="utf8mb3_slovak_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="190" parent="1" name="utf8mb3_slovenian_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="191" parent="1" name="utf8mb3_spanish2_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="192" parent="1" name="utf8mb3_spanish_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="193" parent="1" name="utf8mb3_swedish_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="194" parent="1" name="utf8mb3_tolower_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="195" parent="1" name="utf8mb3_turkish_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="196" parent="1" name="utf8mb3_unicode_520_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="197" parent="1" name="utf8mb3_unicode_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="198" parent="1" name="utf8mb3_vietnamese_ci">
++      <Charset>utf8mb3</Charset>
++    </collation>
++    <collation id="199" parent="1" name="utf8mb4_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++      <DefaultForCharset>1</DefaultForCharset>
++    </collation>
++    <collation id="200" parent="1" name="utf8mb4_0900_as_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="201" parent="1" name="utf8mb4_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="202" parent="1" name="utf8mb4_0900_bin">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="203" parent="1" name="utf8mb4_bg_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="204" parent="1" name="utf8mb4_bg_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="205" parent="1" name="utf8mb4_bin">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="206" parent="1" name="utf8mb4_bs_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="207" parent="1" name="utf8mb4_bs_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="208" parent="1" name="utf8mb4_croatian_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="209" parent="1" name="utf8mb4_cs_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="210" parent="1" name="utf8mb4_cs_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="211" parent="1" name="utf8mb4_czech_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="212" parent="1" name="utf8mb4_da_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="213" parent="1" name="utf8mb4_da_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="214" parent="1" name="utf8mb4_danish_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="215" parent="1" name="utf8mb4_de_pb_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="216" parent="1" name="utf8mb4_de_pb_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="217" parent="1" name="utf8mb4_eo_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="218" parent="1" name="utf8mb4_eo_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="219" parent="1" name="utf8mb4_es_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="220" parent="1" name="utf8mb4_es_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="221" parent="1" name="utf8mb4_es_trad_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="222" parent="1" name="utf8mb4_es_trad_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="223" parent="1" name="utf8mb4_esperanto_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="224" parent="1" name="utf8mb4_estonian_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="225" parent="1" name="utf8mb4_et_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="226" parent="1" name="utf8mb4_et_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="227" parent="1" name="utf8mb4_general_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="228" parent="1" name="utf8mb4_german2_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="229" parent="1" name="utf8mb4_gl_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="230" parent="1" name="utf8mb4_gl_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="231" parent="1" name="utf8mb4_hr_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="232" parent="1" name="utf8mb4_hr_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="233" parent="1" name="utf8mb4_hu_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="234" parent="1" name="utf8mb4_hu_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="235" parent="1" name="utf8mb4_hungarian_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="236" parent="1" name="utf8mb4_icelandic_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="237" parent="1" name="utf8mb4_is_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="238" parent="1" name="utf8mb4_is_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="239" parent="1" name="utf8mb4_ja_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="240" parent="1" name="utf8mb4_ja_0900_as_cs_ks">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="241" parent="1" name="utf8mb4_la_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="242" parent="1" name="utf8mb4_la_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="243" parent="1" name="utf8mb4_latvian_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="244" parent="1" name="utf8mb4_lithuanian_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="245" parent="1" name="utf8mb4_lt_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="246" parent="1" name="utf8mb4_lt_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="247" parent="1" name="utf8mb4_lv_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="248" parent="1" name="utf8mb4_lv_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="249" parent="1" name="utf8mb4_mn_cyrl_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="250" parent="1" name="utf8mb4_mn_cyrl_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="251" parent="1" name="utf8mb4_nb_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="252" parent="1" name="utf8mb4_nb_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="253" parent="1" name="utf8mb4_nn_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="254" parent="1" name="utf8mb4_nn_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="255" parent="1" name="utf8mb4_persian_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="256" parent="1" name="utf8mb4_pl_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="257" parent="1" name="utf8mb4_pl_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="258" parent="1" name="utf8mb4_polish_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="259" parent="1" name="utf8mb4_ro_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="260" parent="1" name="utf8mb4_ro_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="261" parent="1" name="utf8mb4_roman_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="262" parent="1" name="utf8mb4_romanian_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="263" parent="1" name="utf8mb4_ru_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="264" parent="1" name="utf8mb4_ru_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="265" parent="1" name="utf8mb4_sinhala_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="266" parent="1" name="utf8mb4_sk_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="267" parent="1" name="utf8mb4_sk_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="268" parent="1" name="utf8mb4_sl_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="269" parent="1" name="utf8mb4_sl_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="270" parent="1" name="utf8mb4_slovak_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="271" parent="1" name="utf8mb4_slovenian_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="272" parent="1" name="utf8mb4_spanish2_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="273" parent="1" name="utf8mb4_spanish_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="274" parent="1" name="utf8mb4_sr_latn_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="275" parent="1" name="utf8mb4_sr_latn_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="276" parent="1" name="utf8mb4_sv_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="277" parent="1" name="utf8mb4_sv_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="278" parent="1" name="utf8mb4_swedish_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="279" parent="1" name="utf8mb4_tr_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="280" parent="1" name="utf8mb4_tr_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="281" parent="1" name="utf8mb4_turkish_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="282" parent="1" name="utf8mb4_unicode_520_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="283" parent="1" name="utf8mb4_unicode_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="284" parent="1" name="utf8mb4_vi_0900_ai_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="285" parent="1" name="utf8mb4_vi_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="286" parent="1" name="utf8mb4_vietnamese_ci">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <collation id="287" parent="1" name="utf8mb4_zh_0900_as_cs">
++      <Charset>utf8mb4</Charset>
++    </collation>
++    <schema id="288" parent="1" name="coj">
++      <CollationName>utf8mb4_0900_ai_ci</CollationName>
++    </schema>
++    <schema id="289" parent="1" name="information_schema">
++      <CollationName>utf8mb3_general_ci</CollationName>
++    </schema>
++    <schema id="290" parent="1" name="my_judger">
++      <CollationName>utf8mb4_0900_ai_ci</CollationName>
++    </schema>
++    <schema id="291" parent="1" name="mysql">
++      <CollationName>utf8mb4_0900_ai_ci</CollationName>
++    </schema>
++    <schema id="292" parent="1" name="performance_schema">
++      <CollationName>utf8mb4_0900_ai_ci</CollationName>
++    </schema>
++    <schema id="293" parent="1" name="sys">
++      <CollationName>utf8mb4_0900_ai_ci</CollationName>
++    </schema>
++    <user id="294" parent="1" name="debian-sys-maint">
++      <Host>localhost</Host>
++      <Plugin>caching_sha2_password</Plugin>
++    </user>
++    <user id="295" parent="1" name="mysql.infoschema">
++      <CanLogin>0</CanLogin>
++      <Host>localhost</Host>
++      <Plugin>caching_sha2_password</Plugin>
++    </user>
++    <user id="296" parent="1" name="mysql.session">
++      <CanLogin>0</CanLogin>
++      <Host>localhost</Host>
++      <Plugin>caching_sha2_password</Plugin>
++    </user>
++    <user id="297" parent="1" name="mysql.sys">
++      <CanLogin>0</CanLogin>
++      <Host>localhost</Host>
++      <Plugin>caching_sha2_password</Plugin>
++    </user>
++    <user id="298" parent="1" name="root">
++      <Host>localhost</Host>
++    </user>
++  </database-model>
++</dataSource>
+\ No newline at end of file
+Index: log/2024-07-23.log
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/log/2024-07-23.log b/log/2024-07-23.log
+new file mode 100644
+--- /dev/null	(date 1721722896081)
++++ b/log/2024-07-23.log	(date 1721722896081)
+@@ -0,0 +1,4 @@
++[2024-07-23 16:19:03,137] [INFO] COJ Judger Powered by Python
++[2024-07-23 16:20:45,577] [INFO] COJ Judger Powered by Python
++[2024-07-23 16:20:53,337] [INFO] COJ Judger Powered by Python
++[2024-07-23 16:21:36,081] [INFO] COJ Judger Powered by Python
+Index: .idea/dataSources/8fd95cb0-9a3a-48f0-bf3f-f6323cbbdf17.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dataSources/8fd95cb0-9a3a-48f0-bf3f-f6323cbbdf17.xml b/.idea/dataSources/8fd95cb0-9a3a-48f0-bf3f-f6323cbbdf17.xml
+new file mode 100644
+--- /dev/null	(date 1721722977046)
++++ b/.idea/dataSources/8fd95cb0-9a3a-48f0-bf3f-f6323cbbdf17.xml	(date 1721722977046)
+@@ -0,0 +1,1639 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<dataSource name="database">
++  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.52">
++    <root id="1">
++      <ServerVersion>3.45.1</ServerVersion>
++    </root>
++    <collation id="2" parent="1" name="BINARY"/>
++    <collation id="3" parent="1" name="NOCASE"/>
++    <collation id="4" parent="1" name="RTRIM"/>
++    <package id="5" parent="1" name="dbstat"/>
++    <package id="6" parent="1" name="fts3"/>
++    <package id="7" parent="1" name="fts3tokenize"/>
++    <package id="8" parent="1" name="fts4"/>
++    <package id="9" parent="1" name="fts4aux"/>
++    <package id="10" parent="1" name="fts5"/>
++    <package id="11" parent="1" name="fts5vocab"/>
++    <package id="12" parent="1" name="json_each"/>
++    <package id="13" parent="1" name="json_tree"/>
++    <package id="14" parent="1" name="rtree"/>
++    <package id="15" parent="1" name="rtree_i32"/>
++    <routine id="16" parent="1" name="-&gt;">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="17" parent="1" name="-&gt;&gt;">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="18" parent="1" name="abs">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="19" parent="1" name="acos">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="20" parent="1" name="acosh">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="21" parent="1" name="asin">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="22" parent="1" name="asinh">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="23" parent="1" name="atan">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="24" parent="1" name="atan2">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="25" parent="1" name="atanh">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="26" parent="1" name="atn2"/>
++    <routine id="27" parent="1" name="avg">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="28" parent="1" name="bm25">
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="29" parent="1" name="ceil">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="30" parent="1" name="ceiling">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="31" parent="1" name="changes"/>
++    <routine id="32" parent="1" name="char">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="33" parent="1" name="charindex"/>
++    <routine id="34" parent="1" name="charindex"/>
++    <routine id="35" parent="1" name="coalesce">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="36" parent="1" name="concat">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="37" parent="1" name="concat_ws">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="38" parent="1" name="cos">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="39" parent="1" name="cosh">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="40" parent="1" name="cot"/>
++    <routine id="41" parent="1" name="coth"/>
++    <routine id="42" parent="1" name="count">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="43" parent="1" name="cume_dist">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="44" parent="1" name="current_date"/>
++    <routine id="45" parent="1" name="current_time"/>
++    <routine id="46" parent="1" name="current_timestamp"/>
++    <routine id="47" parent="1" name="date">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="48" parent="1" name="datetime">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="49" parent="1" name="degrees">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="50" parent="1" name="dense_rank">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="51" parent="1" name="difference"/>
++    <routine id="52" parent="1" name="exp">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="53" parent="1" name="first_value">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="54" parent="1" name="floor">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="55" parent="1" name="format">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="56" parent="1" name="fts3_tokenizer"/>
++    <routine id="57" parent="1" name="fts3_tokenizer"/>
++    <routine id="58" parent="1" name="fts5"/>
++    <routine id="59" parent="1" name="fts5_source_id">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="60" parent="1" name="glob">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="61" parent="1" name="group_concat">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="62" parent="1" name="hex">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="63" parent="1" name="highlight">
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="64" parent="1" name="ifnull">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="65" parent="1" name="iif">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="66" parent="1" name="instr">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="67" parent="1" name="json">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="68" parent="1" name="json_array">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="69" parent="1" name="json_array_length">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="70" parent="1" name="json_error_position">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="71" parent="1" name="json_extract">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="72" parent="1" name="json_group_array">
++      <Deterministic>1</Deterministic>
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="73" parent="1" name="json_group_object">
++      <Deterministic>1</Deterministic>
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="74" parent="1" name="json_insert">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="75" parent="1" name="json_object">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="76" parent="1" name="json_patch">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="77" parent="1" name="json_quote">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="78" parent="1" name="json_remove">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="79" parent="1" name="json_replace">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="80" parent="1" name="json_set">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="81" parent="1" name="json_type">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="82" parent="1" name="json_valid">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="83" parent="1" name="jsonb">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="84" parent="1" name="jsonb_array">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="85" parent="1" name="jsonb_extract">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="86" parent="1" name="jsonb_group_array">
++      <Deterministic>1</Deterministic>
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="87" parent="1" name="jsonb_group_object">
++      <Deterministic>1</Deterministic>
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="88" parent="1" name="jsonb_insert">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="89" parent="1" name="jsonb_object">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="90" parent="1" name="jsonb_patch">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="91" parent="1" name="jsonb_remove">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="92" parent="1" name="jsonb_replace">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="93" parent="1" name="jsonb_set">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="94" parent="1" name="julianday">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="95" parent="1" name="lag">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="96" parent="1" name="lag">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="97" parent="1" name="last_insert_rowid"/>
++    <routine id="98" parent="1" name="last_value">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="99" parent="1" name="lead">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="100" parent="1" name="lead">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="101" parent="1" name="leftstr"/>
++    <routine id="102" parent="1" name="length">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="103" parent="1" name="like">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="104" parent="1" name="likelihood">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="105" parent="1" name="likely">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="106" parent="1" name="ln">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="107" parent="1" name="load_extension"/>
++    <routine id="108" parent="1" name="log">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="109" parent="1" name="log10">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="110" parent="1" name="log2">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="111" parent="1" name="lower">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="112" parent="1" name="lower_quartile">
++      <FunctionType>aggregate</FunctionType>
++    </routine>
++    <routine id="113" parent="1" name="ltrim">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="114" parent="1" name="match"/>
++    <routine id="115" parent="1" name="matchinfo"/>
++    <routine id="116" parent="1" name="matchinfo"/>
++    <routine id="117" parent="1" name="max">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="118" parent="1" name="max">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="119" parent="1" name="median">
++      <FunctionType>aggregate</FunctionType>
++    </routine>
++    <routine id="120" parent="1" name="min">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="121" parent="1" name="min">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="122" parent="1" name="mod">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="123" parent="1" name="mode">
++      <FunctionType>aggregate</FunctionType>
++    </routine>
++    <routine id="124" parent="1" name="nth_value">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="125" parent="1" name="ntile">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="126" parent="1" name="nullif">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="127" parent="1" name="octet_length">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="128" parent="1" name="offsets"/>
++    <routine id="129" parent="1" name="optimize"/>
++    <routine id="130" parent="1" name="padc"/>
++    <routine id="131" parent="1" name="padl"/>
++    <routine id="132" parent="1" name="padr"/>
++    <routine id="133" parent="1" name="percent_rank">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="134" parent="1" name="pi">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="135" parent="1" name="pow">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="136" parent="1" name="power">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="137" parent="1" name="printf">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="138" parent="1" name="proper"/>
++    <routine id="139" parent="1" name="quote">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="140" parent="1" name="radians">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="141" parent="1" name="random"/>
++    <routine id="142" parent="1" name="randomblob"/>
++    <routine id="143" parent="1" name="rank">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="144" parent="1" name="regexp">
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="145" parent="1" name="replace">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="146" parent="1" name="replicate"/>
++    <routine id="147" parent="1" name="reverse"/>
++    <routine id="148" parent="1" name="rightstr"/>
++    <routine id="149" parent="1" name="round">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="150" parent="1" name="row_number">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="151" parent="1" name="rtreecheck">
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="152" parent="1" name="rtreedepth"/>
++    <routine id="153" parent="1" name="rtreenode"/>
++    <routine id="154" parent="1" name="rtrim">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="155" parent="1" name="sign">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="156" parent="1" name="sin">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="157" parent="1" name="sinh">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="158" parent="1" name="snippet">
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="159" parent="1" name="sqlite_compileoption_get"/>
++    <routine id="160" parent="1" name="sqlite_compileoption_used"/>
++    <routine id="161" parent="1" name="sqlite_log">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="162" parent="1" name="sqlite_source_id"/>
++    <routine id="163" parent="1" name="sqlite_version"/>
++    <routine id="164" parent="1" name="sqrt">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="165" parent="1" name="square"/>
++    <routine id="166" parent="1" name="stdev">
++      <FunctionType>aggregate</FunctionType>
++    </routine>
++    <routine id="167" parent="1" name="strfilter"/>
++    <routine id="168" parent="1" name="strftime">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="169" parent="1" name="string_agg">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="170" parent="1" name="substr">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="171" parent="1" name="substring">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="172" parent="1" name="subtype">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="173" parent="1" name="sum">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="174" parent="1" name="tan">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="175" parent="1" name="tanh">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="176" parent="1" name="time">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="177" parent="1" name="timediff">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="178" parent="1" name="total">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="179" parent="1" name="total_changes"/>
++    <routine id="180" parent="1" name="trim">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="181" parent="1" name="trunc">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="182" parent="1" name="typeof">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="183" parent="1" name="unhex">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="184" parent="1" name="unicode">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="185" parent="1" name="unixepoch">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="186" parent="1" name="unlikely">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="187" parent="1" name="upper">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="188" parent="1" name="upper_quartile">
++      <FunctionType>aggregate</FunctionType>
++    </routine>
++    <routine id="189" parent="1" name="variance">
++      <FunctionType>aggregate</FunctionType>
++    </routine>
++    <routine id="190" parent="1" name="zeroblob">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <schema id="191" parent="1" name="main">
++      <Current>1</Current>
++      <LastIntrospectionLocalTimestamp>2024-07-23.08:22:26</LastIntrospectionLocalTimestamp>
++    </schema>
++    <argument id="192" parent="16">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="193" parent="16">
++      <Position>1</Position>
++    </argument>
++    <argument id="194" parent="16">
++      <Position>2</Position>
++    </argument>
++    <argument id="195" parent="17">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="196" parent="17">
++      <Position>1</Position>
++    </argument>
++    <argument id="197" parent="17">
++      <Position>2</Position>
++    </argument>
++    <argument id="198" parent="18">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="199" parent="18">
++      <Position>1</Position>
++    </argument>
++    <argument id="200" parent="19">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="201" parent="19">
++      <Position>1</Position>
++    </argument>
++    <argument id="202" parent="20">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="203" parent="20">
++      <Position>1</Position>
++    </argument>
++    <argument id="204" parent="21">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="205" parent="21">
++      <Position>1</Position>
++    </argument>
++    <argument id="206" parent="22">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="207" parent="22">
++      <Position>1</Position>
++    </argument>
++    <argument id="208" parent="23">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="209" parent="23">
++      <Position>1</Position>
++    </argument>
++    <argument id="210" parent="24">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="211" parent="24">
++      <Position>1</Position>
++    </argument>
++    <argument id="212" parent="24">
++      <Position>2</Position>
++    </argument>
++    <argument id="213" parent="25">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="214" parent="25">
++      <Position>1</Position>
++    </argument>
++    <argument id="215" parent="26">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="216" parent="26">
++      <Position>1</Position>
++    </argument>
++    <argument id="217" parent="26">
++      <Position>2</Position>
++    </argument>
++    <argument id="218" parent="27">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="219" parent="27">
++      <Position>1</Position>
++    </argument>
++    <argument id="220" parent="28">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="221" parent="29">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="222" parent="29">
++      <Position>1</Position>
++    </argument>
++    <argument id="223" parent="30">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="224" parent="30">
++      <Position>1</Position>
++    </argument>
++    <argument id="225" parent="31">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="226" parent="32">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="227" parent="33">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="228" parent="33">
++      <Position>1</Position>
++    </argument>
++    <argument id="229" parent="33">
++      <Position>2</Position>
++    </argument>
++    <argument id="230" parent="34">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="231" parent="34">
++      <Position>1</Position>
++    </argument>
++    <argument id="232" parent="34">
++      <Position>2</Position>
++    </argument>
++    <argument id="233" parent="34">
++      <Position>3</Position>
++    </argument>
++    <argument id="234" parent="35">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="235" parent="36">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="236" parent="37">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="237" parent="38">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="238" parent="38">
++      <Position>1</Position>
++    </argument>
++    <argument id="239" parent="39">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="240" parent="39">
++      <Position>1</Position>
++    </argument>
++    <argument id="241" parent="40">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="242" parent="40">
++      <Position>1</Position>
++    </argument>
++    <argument id="243" parent="41">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="244" parent="41">
++      <Position>1</Position>
++    </argument>
++    <argument id="245" parent="42">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="246" parent="42">
++      <Position>1</Position>
++    </argument>
++    <argument id="247" parent="43">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="248" parent="44">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="249" parent="45">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="250" parent="46">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="251" parent="47">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="252" parent="48">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="253" parent="49">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="254" parent="49">
++      <Position>1</Position>
++    </argument>
++    <argument id="255" parent="50">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="256" parent="51">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="257" parent="51">
++      <Position>1</Position>
++    </argument>
++    <argument id="258" parent="51">
++      <Position>2</Position>
++    </argument>
++    <argument id="259" parent="52">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="260" parent="52">
++      <Position>1</Position>
++    </argument>
++    <argument id="261" parent="53">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="262" parent="53">
++      <Position>1</Position>
++    </argument>
++    <argument id="263" parent="54">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="264" parent="54">
++      <Position>1</Position>
++    </argument>
++    <argument id="265" parent="55">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="266" parent="56">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="267" parent="56">
++      <Position>1</Position>
++    </argument>
++    <argument id="268" parent="57">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="269" parent="57">
++      <Position>1</Position>
++    </argument>
++    <argument id="270" parent="57">
++      <Position>2</Position>
++    </argument>
++    <argument id="271" parent="58">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="272" parent="58">
++      <Position>1</Position>
++    </argument>
++    <argument id="273" parent="59">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="274" parent="60">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="275" parent="60">
++      <Position>1</Position>
++    </argument>
++    <argument id="276" parent="60">
++      <Position>2</Position>
++    </argument>
++    <argument id="277" parent="61">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="278" parent="61">
++      <Position>1</Position>
++    </argument>
++    <argument id="279" parent="61">
++      <Position>2</Position>
++    </argument>
++    <argument id="280" parent="62">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="281" parent="62">
++      <Position>1</Position>
++    </argument>
++    <argument id="282" parent="63">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="283" parent="64">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="284" parent="64">
++      <Position>1</Position>
++    </argument>
++    <argument id="285" parent="64">
++      <Position>2</Position>
++    </argument>
++    <argument id="286" parent="65">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="287" parent="65">
++      <Position>1</Position>
++    </argument>
++    <argument id="288" parent="65">
++      <Position>2</Position>
++    </argument>
++    <argument id="289" parent="65">
++      <Position>3</Position>
++    </argument>
++    <argument id="290" parent="66">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="291" parent="66">
++      <Position>1</Position>
++    </argument>
++    <argument id="292" parent="66">
++      <Position>2</Position>
++    </argument>
++    <argument id="293" parent="67">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="294" parent="67">
++      <Position>1</Position>
++    </argument>
++    <argument id="295" parent="68">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="296" parent="69">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="297" parent="69">
++      <Position>1</Position>
++    </argument>
++    <argument id="298" parent="69">
++      <Position>2</Position>
++    </argument>
++    <argument id="299" parent="70">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="300" parent="70">
++      <Position>1</Position>
++    </argument>
++    <argument id="301" parent="71">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="302" parent="72">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="303" parent="72">
++      <Position>1</Position>
++    </argument>
++    <argument id="304" parent="73">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="305" parent="73">
++      <Position>1</Position>
++    </argument>
++    <argument id="306" parent="73">
++      <Position>2</Position>
++    </argument>
++    <argument id="307" parent="74">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="308" parent="75">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="309" parent="76">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="310" parent="76">
++      <Position>1</Position>
++    </argument>
++    <argument id="311" parent="76">
++      <Position>2</Position>
++    </argument>
++    <argument id="312" parent="77">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="313" parent="77">
++      <Position>1</Position>
++    </argument>
++    <argument id="314" parent="78">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="315" parent="79">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="316" parent="80">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="317" parent="81">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="318" parent="81">
++      <Position>1</Position>
++    </argument>
++    <argument id="319" parent="81">
++      <Position>2</Position>
++    </argument>
++    <argument id="320" parent="82">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="321" parent="82">
++      <Position>1</Position>
++    </argument>
++    <argument id="322" parent="82">
++      <Position>2</Position>
++    </argument>
++    <argument id="323" parent="83">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="324" parent="83">
++      <Position>1</Position>
++    </argument>
++    <argument id="325" parent="84">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="326" parent="85">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="327" parent="86">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="328" parent="86">
++      <Position>1</Position>
++    </argument>
++    <argument id="329" parent="87">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="330" parent="87">
++      <Position>1</Position>
++    </argument>
++    <argument id="331" parent="87">
++      <Position>2</Position>
++    </argument>
++    <argument id="332" parent="88">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="333" parent="89">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="334" parent="90">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="335" parent="90">
++      <Position>1</Position>
++    </argument>
++    <argument id="336" parent="90">
++      <Position>2</Position>
++    </argument>
++    <argument id="337" parent="91">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="338" parent="92">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="339" parent="93">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="340" parent="94">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="341" parent="95">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="342" parent="95">
++      <Position>1</Position>
++    </argument>
++    <argument id="343" parent="95">
++      <Position>2</Position>
++    </argument>
++    <argument id="344" parent="96">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="345" parent="96">
++      <Position>1</Position>
++    </argument>
++    <argument id="346" parent="96">
++      <Position>2</Position>
++    </argument>
++    <argument id="347" parent="96">
++      <Position>3</Position>
++    </argument>
++    <argument id="348" parent="97">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="349" parent="98">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="350" parent="98">
++      <Position>1</Position>
++    </argument>
++    <argument id="351" parent="99">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="352" parent="99">
++      <Position>1</Position>
++    </argument>
++    <argument id="353" parent="99">
++      <Position>2</Position>
++    </argument>
++    <argument id="354" parent="100">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="355" parent="100">
++      <Position>1</Position>
++    </argument>
++    <argument id="356" parent="100">
++      <Position>2</Position>
++    </argument>
++    <argument id="357" parent="100">
++      <Position>3</Position>
++    </argument>
++    <argument id="358" parent="101">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="359" parent="101">
++      <Position>1</Position>
++    </argument>
++    <argument id="360" parent="101">
++      <Position>2</Position>
++    </argument>
++    <argument id="361" parent="102">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="362" parent="102">
++      <Position>1</Position>
++    </argument>
++    <argument id="363" parent="103">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="364" parent="103">
++      <Position>1</Position>
++    </argument>
++    <argument id="365" parent="103">
++      <Position>2</Position>
++    </argument>
++    <argument id="366" parent="103">
++      <Position>3</Position>
++    </argument>
++    <argument id="367" parent="104">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="368" parent="104">
++      <Position>1</Position>
++    </argument>
++    <argument id="369" parent="104">
++      <Position>2</Position>
++    </argument>
++    <argument id="370" parent="105">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="371" parent="105">
++      <Position>1</Position>
++    </argument>
++    <argument id="372" parent="106">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="373" parent="106">
++      <Position>1</Position>
++    </argument>
++    <argument id="374" parent="107">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="375" parent="107">
++      <Position>1</Position>
++    </argument>
++    <argument id="376" parent="107">
++      <Position>2</Position>
++    </argument>
++    <argument id="377" parent="108">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="378" parent="108">
++      <Position>1</Position>
++    </argument>
++    <argument id="379" parent="108">
++      <Position>2</Position>
++    </argument>
++    <argument id="380" parent="109">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="381" parent="109">
++      <Position>1</Position>
++    </argument>
++    <argument id="382" parent="110">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="383" parent="110">
++      <Position>1</Position>
++    </argument>
++    <argument id="384" parent="111">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="385" parent="111">
++      <Position>1</Position>
++    </argument>
++    <argument id="386" parent="112">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="387" parent="112">
++      <Position>1</Position>
++    </argument>
++    <argument id="388" parent="113">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="389" parent="113">
++      <Position>1</Position>
++    </argument>
++    <argument id="390" parent="113">
++      <Position>2</Position>
++    </argument>
++    <argument id="391" parent="114">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="392" parent="114">
++      <Position>1</Position>
++    </argument>
++    <argument id="393" parent="114">
++      <Position>2</Position>
++    </argument>
++    <argument id="394" parent="115">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="395" parent="115">
++      <Position>1</Position>
++    </argument>
++    <argument id="396" parent="116">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="397" parent="116">
++      <Position>1</Position>
++    </argument>
++    <argument id="398" parent="116">
++      <Position>2</Position>
++    </argument>
++    <argument id="399" parent="117">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="400" parent="118">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="401" parent="118">
++      <Position>1</Position>
++    </argument>
++    <argument id="402" parent="119">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="403" parent="119">
++      <Position>1</Position>
++    </argument>
++    <argument id="404" parent="120">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="405" parent="121">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="406" parent="121">
++      <Position>1</Position>
++    </argument>
++    <argument id="407" parent="122">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="408" parent="122">
++      <Position>1</Position>
++    </argument>
++    <argument id="409" parent="122">
++      <Position>2</Position>
++    </argument>
++    <argument id="410" parent="123">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="411" parent="123">
++      <Position>1</Position>
++    </argument>
++    <argument id="412" parent="124">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="413" parent="124">
++      <Position>1</Position>
++    </argument>
++    <argument id="414" parent="124">
++      <Position>2</Position>
++    </argument>
++    <argument id="415" parent="125">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="416" parent="125">
++      <Position>1</Position>
++    </argument>
++    <argument id="417" parent="126">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="418" parent="126">
++      <Position>1</Position>
++    </argument>
++    <argument id="419" parent="126">
++      <Position>2</Position>
++    </argument>
++    <argument id="420" parent="127">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="421" parent="127">
++      <Position>1</Position>
++    </argument>
++    <argument id="422" parent="128">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="423" parent="128">
++      <Position>1</Position>
++    </argument>
++    <argument id="424" parent="129">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="425" parent="129">
++      <Position>1</Position>
++    </argument>
++    <argument id="426" parent="130">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="427" parent="130">
++      <Position>1</Position>
++    </argument>
++    <argument id="428" parent="130">
++      <Position>2</Position>
++    </argument>
++    <argument id="429" parent="131">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="430" parent="131">
++      <Position>1</Position>
++    </argument>
++    <argument id="431" parent="131">
++      <Position>2</Position>
++    </argument>
++    <argument id="432" parent="132">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="433" parent="132">
++      <Position>1</Position>
++    </argument>
++    <argument id="434" parent="132">
++      <Position>2</Position>
++    </argument>
++    <argument id="435" parent="133">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="436" parent="134">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="437" parent="135">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="438" parent="135">
++      <Position>1</Position>
++    </argument>
++    <argument id="439" parent="135">
++      <Position>2</Position>
++    </argument>
++    <argument id="440" parent="136">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="441" parent="136">
++      <Position>1</Position>
++    </argument>
++    <argument id="442" parent="136">
++      <Position>2</Position>
++    </argument>
++    <argument id="443" parent="137">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="444" parent="138">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="445" parent="138">
++      <Position>1</Position>
++    </argument>
++    <argument id="446" parent="139">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="447" parent="139">
++      <Position>1</Position>
++    </argument>
++    <argument id="448" parent="140">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="449" parent="140">
++      <Position>1</Position>
++    </argument>
++    <argument id="450" parent="141">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="451" parent="142">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="452" parent="142">
++      <Position>1</Position>
++    </argument>
++    <argument id="453" parent="143">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="454" parent="144">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="455" parent="145">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="456" parent="145">
++      <Position>1</Position>
++    </argument>
++    <argument id="457" parent="145">
++      <Position>2</Position>
++    </argument>
++    <argument id="458" parent="145">
++      <Position>3</Position>
++    </argument>
++    <argument id="459" parent="146">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="460" parent="146">
++      <Position>1</Position>
++    </argument>
++    <argument id="461" parent="146">
++      <Position>2</Position>
++    </argument>
++    <argument id="462" parent="147">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="463" parent="147">
++      <Position>1</Position>
++    </argument>
++    <argument id="464" parent="148">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="465" parent="148">
++      <Position>1</Position>
++    </argument>
++    <argument id="466" parent="148">
++      <Position>2</Position>
++    </argument>
++    <argument id="467" parent="149">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="468" parent="149">
++      <Position>1</Position>
++    </argument>
++    <argument id="469" parent="149">
++      <Position>2</Position>
++    </argument>
++    <argument id="470" parent="150">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="471" parent="151">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="472" parent="152">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="473" parent="152">
++      <Position>1</Position>
++    </argument>
++    <argument id="474" parent="153">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="475" parent="153">
++      <Position>1</Position>
++    </argument>
++    <argument id="476" parent="153">
++      <Position>2</Position>
++    </argument>
++    <argument id="477" parent="154">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="478" parent="154">
++      <Position>1</Position>
++    </argument>
++    <argument id="479" parent="154">
++      <Position>2</Position>
++    </argument>
++    <argument id="480" parent="155">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="481" parent="155">
++      <Position>1</Position>
++    </argument>
++    <argument id="482" parent="156">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="483" parent="156">
++      <Position>1</Position>
++    </argument>
++    <argument id="484" parent="157">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="485" parent="157">
++      <Position>1</Position>
++    </argument>
++    <argument id="486" parent="158">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="487" parent="159">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="488" parent="159">
++      <Position>1</Position>
++    </argument>
++    <argument id="489" parent="160">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="490" parent="160">
++      <Position>1</Position>
++    </argument>
++    <argument id="491" parent="161">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="492" parent="161">
++      <Position>1</Position>
++    </argument>
++    <argument id="493" parent="161">
++      <Position>2</Position>
++    </argument>
++    <argument id="494" parent="162">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="495" parent="163">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="496" parent="164">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="497" parent="164">
++      <Position>1</Position>
++    </argument>
++    <argument id="498" parent="165">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="499" parent="165">
++      <Position>1</Position>
++    </argument>
++    <argument id="500" parent="166">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="501" parent="166">
++      <Position>1</Position>
++    </argument>
++    <argument id="502" parent="167">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="503" parent="167">
++      <Position>1</Position>
++    </argument>
++    <argument id="504" parent="167">
++      <Position>2</Position>
++    </argument>
++    <argument id="505" parent="168">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="506" parent="169">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="507" parent="169">
++      <Position>1</Position>
++    </argument>
++    <argument id="508" parent="169">
++      <Position>2</Position>
++    </argument>
++    <argument id="509" parent="170">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="510" parent="170">
++      <Position>1</Position>
++    </argument>
++    <argument id="511" parent="170">
++      <Position>2</Position>
++    </argument>
++    <argument id="512" parent="170">
++      <Position>3</Position>
++    </argument>
++    <argument id="513" parent="171">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="514" parent="171">
++      <Position>1</Position>
++    </argument>
++    <argument id="515" parent="171">
++      <Position>2</Position>
++    </argument>
++    <argument id="516" parent="171">
++      <Position>3</Position>
++    </argument>
++    <argument id="517" parent="172">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="518" parent="172">
++      <Position>1</Position>
++    </argument>
++    <argument id="519" parent="173">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="520" parent="173">
++      <Position>1</Position>
++    </argument>
++    <argument id="521" parent="174">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="522" parent="174">
++      <Position>1</Position>
++    </argument>
++    <argument id="523" parent="175">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="524" parent="175">
++      <Position>1</Position>
++    </argument>
++    <argument id="525" parent="176">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="526" parent="177">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="527" parent="177">
++      <Position>1</Position>
++    </argument>
++    <argument id="528" parent="177">
++      <Position>2</Position>
++    </argument>
++    <argument id="529" parent="178">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="530" parent="178">
++      <Position>1</Position>
++    </argument>
++    <argument id="531" parent="179">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="532" parent="180">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="533" parent="180">
++      <Position>1</Position>
++    </argument>
++    <argument id="534" parent="180">
++      <Position>2</Position>
++    </argument>
++    <argument id="535" parent="181">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="536" parent="181">
++      <Position>1</Position>
++    </argument>
++    <argument id="537" parent="182">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="538" parent="182">
++      <Position>1</Position>
++    </argument>
++    <argument id="539" parent="183">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="540" parent="183">
++      <Position>1</Position>
++    </argument>
++    <argument id="541" parent="183">
++      <Position>2</Position>
++    </argument>
++    <argument id="542" parent="184">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="543" parent="184">
++      <Position>1</Position>
++    </argument>
++    <argument id="544" parent="185">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="545" parent="186">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="546" parent="186">
++      <Position>1</Position>
++    </argument>
++    <argument id="547" parent="187">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="548" parent="187">
++      <Position>1</Position>
++    </argument>
++    <argument id="549" parent="188">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="550" parent="188">
++      <Position>1</Position>
++    </argument>
++    <argument id="551" parent="189">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="552" parent="189">
++      <Position>1</Position>
++    </argument>
++    <argument id="553" parent="190">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="554" parent="190">
++      <Position>1</Position>
++    </argument>
++    <table id="555" parent="191" name="sqlite_master">
++      <System>1</System>
++    </table>
++    <table id="556" parent="191" name="tb_link"/>
++    <table id="557" parent="191" name="tb_user"/>
++    <column id="558" parent="555" name="type">
++      <DasType>TEXT|0s</DasType>
++      <Position>1</Position>
++    </column>
++    <column id="559" parent="555" name="name">
++      <DasType>TEXT|0s</DasType>
++      <Position>2</Position>
++    </column>
++    <column id="560" parent="555" name="tbl_name">
++      <DasType>TEXT|0s</DasType>
++      <Position>3</Position>
++    </column>
++    <column id="561" parent="555" name="rootpage">
++      <DasType>INT|0s</DasType>
++      <Position>4</Position>
++    </column>
++    <column id="562" parent="555" name="sql">
++      <DasType>TEXT|0s</DasType>
++      <Position>5</Position>
++    </column>
++    <column id="563" parent="556" name="pid">
++      <DasType>varchar(255)|0s</DasType>
++      <NotNull>1</NotNull>
++      <Position>1</Position>
++    </column>
++    <column id="564" parent="556" name="username">
++      <DasType>varchar(255)|0s</DasType>
++      <NotNull>1</NotNull>
++      <Position>2</Position>
++    </column>
++    <column id="565" parent="557" name="username">
++      <DasType>varchar(255)|0s</DasType>
++      <NotNull>1</NotNull>
++      <Position>1</Position>
++    </column>
++    <column id="566" parent="557" name="password">
++      <DasType>varchar(255)|0s</DasType>
++      <NotNull>1</NotNull>
++      <Position>2</Position>
++    </column>
++  </database-model>
++</dataSource>
+\ No newline at end of file
+Index: .idea/dataSources/8fd95cb0-9a3a-48f0-bf3f-f6323cbbdf17/storage_v2/_src_/schema/main.uQUzAA.meta
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dataSources/8fd95cb0-9a3a-48f0-bf3f-f6323cbbdf17/storage_v2/_src_/schema/main.uQUzAA.meta b/.idea/dataSources/8fd95cb0-9a3a-48f0-bf3f-f6323cbbdf17/storage_v2/_src_/schema/main.uQUzAA.meta
+new file mode 100644
+--- /dev/null	(date 1721722935027)
++++ b/.idea/dataSources/8fd95cb0-9a3a-48f0-bf3f-f6323cbbdf17/storage_v2/_src_/schema/main.uQUzAA.meta	(date 1721722935027)
+@@ -0,0 +1,2 @@
++#n:main
++!<md> [0, 0, null, null, -2147483648, -2147483648]
+Index: log/2024-07-06.log
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/log/2024-07-06.log b/log/2024-07-06.log
+new file mode 100644
+--- /dev/null	(date 1720275509400)
++++ b/log/2024-07-06.log	(date 1720275509400)
+@@ -0,0 +1,62 @@
++[%Y-%m-%d %H:%M:%S] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:19:52,401] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:21:03,402] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:25:02,760] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:25:31,772] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:25:36,433] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:25:56,102] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:26:49,172] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:30:58,002] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:30:58,136] [ERROR] �޷���judgerע�ᵽcoj�������
++[2024-07-06 14:31:46,969] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:31:46,983] [ERROR] <ClientResponse(http://localhost:8080/register) [200 None]>
++<CIMultiDictProxy('Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Sat, 06 Jul 2024 06:31:46 GMT')>
++
++[2024-07-06 14:31:46,984] [ERROR] �޷���judgerע�ᵽcoj�������
++[2024-07-06 14:32:37,067] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:32:37,081] [ERROR] {'code': 105, 'message': 'No endpoint POST /register.', 'data': None}
++[2024-07-06 14:32:37,081] [ERROR] �޷���judgerע�ᵽcoj�������
++[2024-07-06 14:33:12,642] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:33:12,955] [ERROR] �޷���judgerע�ᵽcoj�������
++[2024-07-06 14:33:48,613] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:36:23,934] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:36:24,061] [INFO] ע��judger�ɹ�����������judger����...
++[2024-07-06 14:36:26,308] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:36:26,322] [INFO] ע��judger�ɹ�����������judger����...
++[2024-07-06 14:36:51,010] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:36:51,022] [INFO] ע��judger�ɹ�����������judger����...
++[2024-07-06 14:42:47,202] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:42:47,223] [INFO] ע��judger�ɹ�����������judger����...
++[2024-07-06 14:43:02,123] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:43:02,145] [INFO] ע��judger�ɹ�����������judger����...
++[2024-07-06 14:45:30,265] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:45:30,267] [INFO] ����juddger����...
++[2024-07-06 14:46:20,347] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:46:20,355] [INFO] ����juddger����...
++[2024-07-06 14:46:28,901] [INFO] ��...
++[2024-07-06 14:47:04,685] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:47:04,694] [INFO] ����juddger����...
++[2024-07-06 14:47:04,705] [INFO] ע��judger�ɹ�����������judger����...
++[2024-07-06 14:47:04,708] [INFO] ��...
++[2024-07-06 14:51:46,193] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:51:46,205] [INFO] ע��judger�ɹ�����������judger����...
++[2024-07-06 14:51:46,206] [INFO] judger�����Ѿ�������
++[2024-07-06 14:52:50,163] [INFO] COJ Judger Powered by Python
++[2024-07-06 14:52:50,182] [INFO] ע��judger�ɹ�����������judger����...
++[2024-07-06 14:52:50,183] [INFO] judger�����Ѿ�������
++[2024-07-06 21:15:13,252] [INFO] COJ Judger Powered by Python
++[2024-07-06 21:15:13,289] [INFO] ע��judger�ɹ�����������judger����...
++[2024-07-06 21:15:13,289] [INFO] �������ݿ�
++[2024-07-06 21:15:13,294] [INFO] (('caiwen', 'z2970046657'), ('caiwen1', 'z2970046657'))
++[2024-07-06 22:17:20,057] [INFO] put aaa
++[2024-07-06 22:17:25,427] [INFO] put aaaa
++[2024-07-06 22:17:30,380] [INFO] put aaaaaaa
++[2024-07-06 22:17:39,390] [INFO] okok aaa
++[2024-07-06 22:17:45,999] [INFO] put aaaa
++[2024-07-06 22:17:49,395] [INFO] okok aaaa
++[2024-07-06 22:17:51,357] [INFO] put fsdf
++[2024-07-06 22:17:55,474] [INFO] put fsdfsdf
++[2024-07-06 22:17:59,393] [INFO] okok aaaaaaa
++[2024-07-06 22:18:09,395] [INFO] okok aaaa
++[2024-07-06 22:18:19,388] [INFO] okok fsdf
++[2024-07-06 22:18:29,400] [INFO] okok fsdfsdf
+Index: log/2024-07-07.log
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/log/2024-07-07.log b/log/2024-07-07.log
+new file mode 100644
+--- /dev/null	(date 1720360897332)
++++ b/log/2024-07-07.log	(date 1720360897332)
+@@ -0,0 +1,910 @@
++[2024-07-07 14:58:36,817] [INFO] COJ Judger Powered by Python
++[2024-07-07 14:58:36,834] [INFO] ע��judger�ɹ�����������judger����...
++[2024-07-07 14:58:36,835] [INFO] �������ݿ�
++[2024-07-07 15:08:04,546] [INFO] COJ Judger Powered by Python
++[2024-07-07 15:08:04,557] [INFO] ע��judger�ɹ�����������judger����...
++[2024-07-07 15:08:04,557] [INFO] ping
++[2024-07-07 15:08:04,558] [INFO] �������ݿ�
++[2024-07-07 15:08:34,588] [INFO] ping
++[2024-07-07 15:09:04,601] [INFO] ping
++[2024-07-07 15:09:34,598] [INFO] ping
++[2024-07-07 15:10:04,604] [INFO] ping
++[2024-07-07 15:10:34,614] [INFO] ping
++[2024-07-07 15:11:08,628] [INFO] COJ Judger Powered by Python
++[2024-07-07 15:11:08,757] [ERROR] {'code': 105, 'message': 'I/O error on GET request for "http://localhost:5000/info": Connection refused: connect', 'data': None}
++[2024-07-07 15:11:08,757] [ERROR] �޷���judgerע�ᵽcoj�������
++[2024-07-07 15:14:21,527] [INFO] COJ Judger Powered by Python
++[2024-07-07 15:14:21,536] [INFO] �������ݿ�...
++[2024-07-07 15:14:21,539] [INFO] ��ʼ��robots...
++[2024-07-07 15:14:21,540] [INFO] ����judger����...
++[2024-07-07 15:14:21,540] [INFO] ע��judger����...
++[2024-07-07 15:14:21,555] [ERROR] {'code': 102, 'message': 'Ŀ��judger�ѱ�ע��', 'data': None}
++[2024-07-07 15:14:21,556] [INFO] judger�����������
++[2024-07-07 15:15:48,511] [INFO] COJ Judger Powered by Python
++[2024-07-07 15:15:48,522] [INFO] �������ݿ�...
++[2024-07-07 15:15:48,525] [INFO] ��ʼ��robots...
++[2024-07-07 15:15:48,525] [INFO] ����judger����...
++[2024-07-07 15:15:48,526] [INFO] ע��judger����...
++[2024-07-07 15:15:48,538] [ERROR] {'code': 102, 'message': 'Ŀ��judger�ѱ�ע��', 'data': None}
++[2024-07-07 15:15:48,539] [ERROR] ע��judger����ʧ��
++[2024-07-07 15:17:05,141] [INFO] COJ Judger Powered by Python
++[2024-07-07 15:17:05,151] [INFO] �������ݿ�...
++[2024-07-07 15:17:05,155] [INFO] ��ʼ��robots...
++[2024-07-07 15:17:05,157] [INFO] ����judger����...
++[2024-07-07 15:17:05,157] [INFO] ע��judger����...
++[2024-07-07 15:17:05,168] [ERROR] {'code': 102, 'message': 'Ŀ��judger�ѱ�ע��', 'data': None}
++[2024-07-07 15:17:05,168] [ERROR] ע��judger����ʧ��
++[2024-07-07 15:19:41,166] [INFO] COJ Judger Powered by Python
++[2024-07-07 15:19:41,176] [INFO] �������ݿ�...
++[2024-07-07 15:19:41,179] [INFO] ��ʼ��robots...
++[2024-07-07 15:19:41,180] [INFO] ����judger����...
++[2024-07-07 15:19:41,180] [INFO] ע��judger����...
++[2024-07-07 15:19:41,316] [INFO] judger�����������
++[2024-07-07 15:19:41,316] [INFO] ping
++[2024-07-07 15:20:11,318] [INFO] ping
++[2024-07-07 15:20:41,313] [INFO] ping
++[2024-07-07 15:21:11,338] [INFO] ping
++[2024-07-07 15:21:36,659] [INFO] COJ Judger Powered by Python
++[2024-07-07 15:21:36,661] [INFO] �������ݿ�...
++[2024-07-07 15:21:36,664] [INFO] ��ʼ��robots...
++[2024-07-07 15:21:36,665] [INFO] ����judger����...
++[2024-07-07 15:21:36,666] [INFO] ע��judger����...
++[2024-07-07 15:21:36,836] [INFO] judger�����������
++[2024-07-07 15:21:36,836] [INFO] ping
++[2024-07-07 15:22:06,833] [INFO] ping
++[2024-07-07 15:23:54,771] [INFO] ping
++[2024-07-07 15:24:24,779] [INFO] ping
++[2024-07-07 15:24:54,789] [INFO] ping
++[2024-07-07 15:25:24,817] [INFO] ping
++[2024-07-07 15:25:54,830] [INFO] ping
++[2024-07-07 15:26:02,797] [INFO] COJ Judger Powered by Python
++[2024-07-07 15:26:02,799] [INFO] �������ݿ�...
++[2024-07-07 15:26:02,801] [INFO] ��ʼ��robots...
++[2024-07-07 15:26:02,802] [INFO] ����judger����...
++[2024-07-07 15:26:02,802] [INFO] ע��judger����...
++[2024-07-07 15:26:02,953] [INFO] judger�����������
++[2024-07-07 15:26:02,953] [INFO] ping
++[2024-07-07 15:26:32,953] [INFO] ping
++[2024-07-07 15:27:02,953] [INFO] ping
++[2024-07-07 15:27:32,967] [INFO] ping
++[2024-07-07 15:27:53,731] [INFO] COJ Judger Powered by Python
++[2024-07-07 15:27:53,740] [INFO] �������ݿ�...
++[2024-07-07 15:27:53,742] [INFO] ��ʼ��robots...
++[2024-07-07 15:27:53,742] [INFO] ����judger����...
++[2024-07-07 15:27:53,743] [INFO] ע��judger����...
++[2024-07-07 15:27:53,752] [ERROR] {'code': 102, 'message': 'Ŀ��judger�ѱ�ע��', 'data': None}
++[2024-07-07 15:27:53,752] [ERROR] ע��judger����ʧ��
++[2024-07-07 15:28:12,970] [INFO] COJ Judger Powered by Python
++[2024-07-07 15:28:12,979] [INFO] �������ݿ�...
++[2024-07-07 15:28:12,982] [INFO] ��ʼ��robots...
++[2024-07-07 15:28:12,983] [INFO] ����judger����...
++[2024-07-07 15:28:12,984] [INFO] ע��judger����...
++[2024-07-07 15:28:12,998] [INFO] judger�����������
++[2024-07-07 15:28:12,998] [INFO] ping
++[2024-07-07 15:28:18,658] [INFO] ��֤�룺432581
++[2024-07-07 15:28:43,017] [INFO] ping
++[2024-07-07 15:29:13,028] [INFO] ping
++[2024-07-07 15:29:43,038] [INFO] ping
++[2024-07-07 15:30:13,045] [INFO] ping
++[2024-07-07 15:30:43,062] [INFO] ping
++[2024-07-07 15:31:13,065] [INFO] ping
++[2024-07-07 15:31:43,077] [INFO] ping
++[2024-07-07 15:32:13,090] [INFO] ping
++[2024-07-07 15:32:43,100] [INFO] ping
++[2024-07-07 15:33:13,111] [INFO] ping
++[2024-07-07 15:33:43,123] [INFO] ping
++[2024-07-07 15:34:13,132] [INFO] ping
++[2024-07-07 15:34:43,129] [INFO] ping
++[2024-07-07 15:35:13,132] [INFO] ping
++[2024-07-07 15:35:43,124] [INFO] ping
++[2024-07-07 15:36:13,135] [INFO] ping
++[2024-07-07 15:36:43,160] [INFO] ping
++[2024-07-07 15:37:13,178] [INFO] ping
++[2024-07-07 15:37:43,193] [INFO] ping
++[2024-07-07 15:38:13,213] [INFO] ping
++[2024-07-07 15:38:43,232] [INFO] ping
++[2024-07-07 15:39:13,244] [INFO] ping
++[2024-07-07 15:39:43,261] [INFO] ping
++[2024-07-07 15:40:13,265] [INFO] ping
++[2024-07-07 15:40:43,279] [INFO] ping
++[2024-07-07 15:41:13,279] [INFO] ping
++[2024-07-07 15:41:43,293] [INFO] ping
++[2024-07-07 15:42:13,302] [INFO] ping
++[2024-07-07 15:42:41,632] [INFO] ��֤�룺789080
++[2024-07-07 15:42:56,593] [INFO] ping
++[2024-07-07 15:43:26,593] [INFO] ping
++[2024-07-07 15:43:56,621] [INFO] ping
++[2024-07-07 15:44:26,628] [INFO] ping
++[2024-07-07 15:44:56,635] [INFO] ping
++[2024-07-07 15:45:26,650] [INFO] ping
++[2024-07-07 15:45:33,758] [INFO] COJ Judger Powered by Python
++[2024-07-07 15:45:33,767] [INFO] �������ݿ�...
++[2024-07-07 15:45:33,770] [INFO] ��ʼ��robots...
++[2024-07-07 15:45:33,770] [INFO] ����judger����...
++[2024-07-07 15:45:33,771] [INFO] ע��judger����...
++[2024-07-07 15:45:33,983] [INFO] judger�����������
++[2024-07-07 15:45:33,983] [INFO] ping
++[2024-07-07 15:46:03,995] [INFO] ping
++[2024-07-07 15:46:17,504] [INFO] ��֤�룺218985
++[2024-07-07 15:46:34,008] [INFO] ping
++[2024-07-07 15:47:04,029] [INFO] ping
++[2024-07-07 15:47:34,056] [INFO] ping
++[2024-07-07 15:48:04,082] [INFO] ping
++[2024-07-07 15:48:34,087] [INFO] ping
++[2024-07-07 15:49:04,108] [INFO] ping
++[2024-07-07 15:49:34,133] [INFO] ping
++[2024-07-07 15:50:04,153] [INFO] ping
++[2024-07-07 15:51:49,653] [INFO] COJ Judger Powered by Python
++[2024-07-07 15:51:49,663] [INFO] �������ݿ�...
++[2024-07-07 15:51:49,665] [INFO] ��ʼ��robots...
++[2024-07-07 15:51:49,666] [INFO] ����judger����...
++[2024-07-07 15:51:49,667] [INFO] ע��judger����...
++[2024-07-07 15:51:49,680] [INFO] judger�����������
++[2024-07-07 15:51:49,680] [INFO] ping
++[2024-07-07 15:52:03,589] [INFO] COJ Judger Powered by Python
++[2024-07-07 15:52:03,590] [INFO] �������ݿ�...
++[2024-07-07 15:52:03,594] [INFO] ��ʼ��robots...
++[2024-07-07 15:52:03,595] [INFO] ����judger����...
++[2024-07-07 15:52:03,596] [INFO] ע��judger����...
++[2024-07-07 15:52:03,616] [INFO] judger�����������
++[2024-07-07 15:52:03,616] [INFO] ping
++[2024-07-07 15:52:33,619] [INFO] ping
++[2024-07-07 15:52:51,187] [INFO] ��֤�룺130377
++[2024-07-07 15:53:17,369] [INFO] ping
++[2024-07-07 15:53:47,384] [INFO] ping
++[2024-07-07 15:54:17,395] [INFO] ping
++[2024-07-07 15:54:47,260] [INFO] ��֤�룺169717
++[2024-07-07 15:55:37,369] [INFO] ping
++[2024-07-07 15:57:00,877] [INFO] COJ Judger Powered by Python
++[2024-07-07 15:57:00,880] [INFO] �������ݿ�...
++[2024-07-07 15:57:00,883] [INFO] ��ʼ��robots...
++[2024-07-07 15:57:00,885] [INFO] ����judger����...
++[2024-07-07 15:57:00,886] [INFO] ע��judger����...
++[2024-07-07 15:57:00,902] [INFO] judger�����������
++[2024-07-07 15:57:00,902] [INFO] ping
++[2024-07-07 15:57:30,915] [INFO] ping
++[2024-07-07 15:57:52,759] [INFO] ��֤�룺700604
++[2024-07-07 15:58:00,937] [INFO] ping
++[2024-07-07 15:58:30,962] [INFO] ping
++[2024-07-07 15:59:00,974] [INFO] ping
++[2024-07-07 15:59:30,988] [INFO] ping
++[2024-07-07 16:00:00,985] [INFO] ping
++[2024-07-07 16:00:31,000] [INFO] ping
++[2024-07-07 16:01:01,015] [INFO] ping
++[2024-07-07 16:01:31,030] [INFO] ping
++[2024-07-07 16:02:01,054] [INFO] ping
++[2024-07-07 16:02:31,073] [INFO] ping
++[2024-07-07 16:03:01,079] [INFO] ping
++[2024-07-07 16:03:31,085] [INFO] ping
++[2024-07-07 16:04:01,094] [INFO] ping
++[2024-07-07 16:04:31,117] [INFO] ping
++[2024-07-07 16:05:01,137] [INFO] ping
++[2024-07-07 16:05:31,163] [INFO] ping
++[2024-07-07 16:06:01,170] [INFO] ping
++[2024-07-07 16:06:31,180] [INFO] ping
++[2024-07-07 16:07:01,201] [INFO] ping
++[2024-07-07 16:07:31,216] [INFO] ping
++[2024-07-07 16:08:01,241] [INFO] ping
++[2024-07-07 16:08:31,251] [INFO] ping
++[2024-07-07 16:09:01,263] [INFO] ping
++[2024-07-07 16:09:31,276] [INFO] ping
++[2024-07-07 16:10:01,306] [INFO] ping
++[2024-07-07 16:10:31,326] [INFO] ping
++[2024-07-07 16:11:01,349] [INFO] ping
++[2024-07-07 16:11:31,363] [INFO] ping
++[2024-07-07 16:12:01,370] [INFO] ping
++[2024-07-07 16:12:31,373] [INFO] ping
++[2024-07-07 16:13:01,382] [INFO] ping
++[2024-07-07 16:13:31,398] [INFO] ping
++[2024-07-07 16:14:01,416] [INFO] ping
++[2024-07-07 16:14:31,430] [INFO] ping
++[2024-07-07 16:15:01,434] [INFO] ping
++[2024-07-07 16:15:31,448] [INFO] ping
++[2024-07-07 16:16:01,472] [INFO] ping
++[2024-07-07 16:16:31,493] [INFO] ping
++[2024-07-07 16:17:01,508] [INFO] ping
++[2024-07-07 16:17:31,530] [INFO] ping
++[2024-07-07 16:18:01,547] [INFO] ping
++[2024-07-07 16:18:31,549] [INFO] ping
++[2024-07-07 16:19:01,549] [INFO] ping
++[2024-07-07 16:19:31,568] [INFO] ping
++[2024-07-07 16:20:01,582] [INFO] ping
++[2024-07-07 16:20:31,593] [INFO] ping
++[2024-07-07 16:21:01,618] [INFO] ping
++[2024-07-07 16:21:31,637] [INFO] ping
++[2024-07-07 16:22:01,656] [INFO] ping
++[2024-07-07 16:22:31,684] [INFO] ping
++[2024-07-07 16:23:01,697] [INFO] ping
++[2024-07-07 16:23:31,717] [INFO] ping
++[2024-07-07 16:24:01,738] [INFO] ping
++[2024-07-07 16:24:31,745] [INFO] ping
++[2024-07-07 16:25:01,756] [INFO] ping
++[2024-07-07 16:25:31,771] [INFO] ping
++[2024-07-07 16:26:01,790] [INFO] ping
++[2024-07-07 16:26:31,810] [INFO] ping
++[2024-07-07 16:27:01,833] [INFO] ping
++[2024-07-07 16:27:31,847] [INFO] ping
++[2024-07-07 16:28:01,854] [INFO] ping
++[2024-07-07 16:28:31,870] [INFO] ping
++[2024-07-07 16:29:01,880] [INFO] ping
++[2024-07-07 16:29:31,910] [INFO] ping
++[2024-07-07 16:30:01,913] [INFO] ping
++[2024-07-07 16:30:31,919] [INFO] ping
++[2024-07-07 16:31:01,945] [INFO] ping
++[2024-07-07 16:31:31,963] [INFO] ping
++[2024-07-07 16:32:01,983] [INFO] ping
++[2024-07-07 16:32:31,995] [INFO] ping
++[2024-07-07 16:33:02,011] [INFO] ping
++[2024-07-07 16:33:32,018] [INFO] ping
++[2024-07-07 16:34:02,027] [INFO] ping
++[2024-07-07 16:34:32,056] [INFO] ping
++[2024-07-07 16:35:02,071] [INFO] ping
++[2024-07-07 16:35:32,089] [INFO] ping
++[2024-07-07 16:36:02,101] [INFO] ping
++[2024-07-07 16:36:32,109] [INFO] ping
++[2024-07-07 16:37:02,131] [INFO] ping
++[2024-07-07 16:37:32,141] [INFO] ping
++[2024-07-07 16:38:02,165] [INFO] ping
++[2024-07-07 16:38:32,170] [INFO] ping
++[2024-07-07 16:39:02,186] [INFO] ping
++[2024-07-07 16:39:32,195] [INFO] ping
++[2024-07-07 16:40:02,225] [INFO] ping
++[2024-07-07 16:40:32,238] [INFO] ping
++[2024-07-07 16:41:02,242] [INFO] ping
++[2024-07-07 16:41:32,269] [INFO] ping
++[2024-07-07 16:42:02,289] [INFO] ping
++[2024-07-07 16:42:32,306] [INFO] ping
++[2024-07-07 16:43:02,333] [INFO] ping
++[2024-07-07 16:43:32,344] [INFO] ping
++[2024-07-07 16:44:02,350] [INFO] ping
++[2024-07-07 16:44:32,348] [INFO] ping
++[2024-07-07 16:45:02,351] [INFO] ping
++[2024-07-07 16:45:32,365] [INFO] ping
++[2024-07-07 16:46:02,362] [INFO] ping
++[2024-07-07 16:46:32,362] [INFO] ping
++[2024-07-07 16:47:02,374] [INFO] ping
++[2024-07-07 16:47:32,382] [INFO] ping
++[2024-07-07 16:48:02,400] [INFO] ping
++[2024-07-07 16:48:32,407] [INFO] ping
++[2024-07-07 16:49:02,420] [INFO] ping
++[2024-07-07 16:49:32,428] [INFO] ping
++[2024-07-07 16:50:02,452] [INFO] ping
++[2024-07-07 16:50:32,468] [INFO] ping
++[2024-07-07 16:51:02,469] [INFO] ping
++[2024-07-07 16:51:32,479] [INFO] ping
++[2024-07-07 16:52:02,484] [INFO] ping
++[2024-07-07 16:52:32,492] [INFO] ping
++[2024-07-07 16:53:02,506] [INFO] ping
++[2024-07-07 16:53:32,524] [INFO] ping
++[2024-07-07 16:54:02,540] [INFO] ping
++[2024-07-07 16:54:32,558] [INFO] ping
++[2024-07-07 16:55:02,584] [INFO] ping
++[2024-07-07 16:55:32,599] [INFO] ping
++[2024-07-07 16:56:02,593] [INFO] ping
++[2024-07-07 16:56:32,597] [INFO] ping
++[2024-07-07 16:57:02,601] [INFO] ping
++[2024-07-07 16:57:32,631] [INFO] ping
++[2024-07-07 16:58:02,640] [INFO] ping
++[2024-07-07 16:58:32,647] [INFO] ping
++[2024-07-07 16:59:02,655] [INFO] ping
++[2024-07-07 16:59:32,664] [INFO] ping
++[2024-07-07 17:00:02,678] [INFO] ping
++[2024-07-07 17:00:32,695] [INFO] ping
++[2024-07-07 17:01:02,706] [INFO] ping
++[2024-07-07 17:01:32,710] [INFO] ping
++[2024-07-07 17:02:02,740] [INFO] ping
++[2024-07-07 17:02:32,754] [INFO] ping
++[2024-07-07 17:03:02,756] [INFO] ping
++[2024-07-07 17:03:32,772] [INFO] ping
++[2024-07-07 17:04:02,784] [INFO] ping
++[2024-07-07 17:04:32,786] [INFO] ping
++[2024-07-07 17:05:02,791] [INFO] ping
++[2024-07-07 17:05:32,802] [INFO] ping
++[2024-07-07 17:06:02,825] [INFO] ping
++[2024-07-07 17:06:32,850] [INFO] ping
++[2024-07-07 17:07:02,856] [INFO] ping
++[2024-07-07 17:07:32,879] [INFO] ping
++[2024-07-07 17:08:02,890] [INFO] ping
++[2024-07-07 17:08:32,898] [INFO] ping
++[2024-07-07 17:09:02,924] [INFO] ping
++[2024-07-07 17:09:32,948] [INFO] ping
++[2024-07-07 17:10:02,968] [INFO] ping
++[2024-07-07 17:10:32,981] [INFO] ping
++[2024-07-07 17:11:02,996] [INFO] ping
++[2024-07-07 17:11:33,019] [INFO] ping
++[2024-07-07 17:12:03,028] [INFO] ping
++[2024-07-07 17:12:33,035] [INFO] ping
++[2024-07-07 17:13:03,033] [INFO] ping
++[2024-07-07 17:13:33,046] [INFO] ping
++[2024-07-07 17:14:03,063] [INFO] ping
++[2024-07-07 17:14:33,080] [INFO] ping
++[2024-07-07 17:15:03,091] [INFO] ping
++[2024-07-07 17:15:33,104] [INFO] ping
++[2024-07-07 17:16:03,120] [INFO] ping
++[2024-07-07 17:16:33,138] [INFO] ping
++[2024-07-07 17:17:03,143] [INFO] ping
++[2024-07-07 17:17:33,153] [INFO] ping
++[2024-07-07 17:18:03,170] [INFO] ping
++[2024-07-07 17:18:33,190] [INFO] ping
++[2024-07-07 17:19:03,214] [INFO] ping
++[2024-07-07 17:19:33,235] [INFO] ping
++[2024-07-07 17:20:03,235] [INFO] ping
++[2024-07-07 17:20:33,236] [INFO] ping
++[2024-07-07 17:21:03,237] [INFO] ping
++[2024-07-07 17:21:33,250] [INFO] ping
++[2024-07-07 17:22:03,256] [INFO] ping
++[2024-07-07 17:22:33,277] [INFO] ping
++[2024-07-07 17:23:03,287] [INFO] ping
++[2024-07-07 17:23:33,301] [INFO] ping
++[2024-07-07 17:24:03,313] [INFO] ping
++[2024-07-07 17:24:33,333] [INFO] ping
++[2024-07-07 17:25:03,328] [INFO] ping
++[2024-07-07 17:25:33,337] [INFO] ping
++[2024-07-07 17:26:03,345] [INFO] ping
++[2024-07-07 17:26:33,347] [INFO] ping
++[2024-07-07 17:27:03,366] [INFO] ping
++[2024-07-07 17:27:33,373] [INFO] ping
++[2024-07-07 17:28:03,396] [INFO] ping
++[2024-07-07 17:28:33,417] [INFO] ping
++[2024-07-07 17:29:03,423] [INFO] ping
++[2024-07-07 17:29:33,439] [INFO] ping
++[2024-07-07 17:30:03,440] [INFO] ping
++[2024-07-07 17:30:33,453] [INFO] ping
++[2024-07-07 17:31:03,457] [INFO] ping
++[2024-07-07 17:31:33,446] [INFO] ping
++[2024-07-07 17:32:03,447] [INFO] ping
++[2024-07-07 17:32:33,446] [INFO] ping
++[2024-07-07 17:33:03,447] [INFO] ping
++[2024-07-07 17:33:33,454] [INFO] ping
++[2024-07-07 17:34:03,462] [INFO] ping
++[2024-07-07 17:34:33,469] [INFO] ping
++[2024-07-07 17:35:03,481] [INFO] ping
++[2024-07-07 17:35:33,490] [INFO] ping
++[2024-07-07 17:36:03,498] [INFO] ping
++[2024-07-07 17:36:33,501] [INFO] ping
++[2024-07-07 17:37:03,511] [INFO] ping
++[2024-07-07 17:37:33,518] [INFO] ping
++[2024-07-07 17:38:03,531] [INFO] ping
++[2024-07-07 17:38:33,542] [INFO] ping
++[2024-07-07 17:39:03,540] [INFO] ping
++[2024-07-07 17:39:33,543] [INFO] ping
++[2024-07-07 17:40:03,551] [INFO] ping
++[2024-07-07 17:40:33,561] [INFO] ping
++[2024-07-07 17:41:03,583] [INFO] ping
++[2024-07-07 17:41:33,577] [INFO] ping
++[2024-07-07 17:42:03,585] [INFO] ping
++[2024-07-07 17:42:33,606] [INFO] ping
++[2024-07-07 17:43:03,615] [INFO] ping
++[2024-07-07 17:43:33,611] [INFO] ping
++[2024-07-07 17:44:03,621] [INFO] ping
++[2024-07-07 17:44:33,644] [INFO] ping
++[2024-07-07 17:45:03,644] [INFO] ping
++[2024-07-07 17:45:33,651] [INFO] ping
++[2024-07-07 17:46:03,656] [INFO] ping
++[2024-07-07 17:46:33,660] [INFO] ping
++[2024-07-07 17:47:03,677] [INFO] ping
++[2024-07-07 17:47:33,691] [INFO] ping
++[2024-07-07 17:48:03,693] [INFO] ping
++[2024-07-07 17:48:33,704] [INFO] ping
++[2024-07-07 17:49:03,723] [INFO] ping
++[2024-07-07 17:49:33,730] [INFO] ping
++[2024-07-07 17:50:03,735] [INFO] ping
++[2024-07-07 17:50:33,749] [INFO] ping
++[2024-07-07 17:51:03,765] [INFO] ping
++[2024-07-07 17:51:33,774] [INFO] ping
++[2024-07-07 17:52:03,787] [INFO] ping
++[2024-07-07 17:52:33,800] [INFO] ping
++[2024-07-07 17:53:03,818] [INFO] ping
++[2024-07-07 17:53:33,827] [INFO] ping
++[2024-07-07 17:54:03,843] [INFO] ping
++[2024-07-07 17:54:33,851] [INFO] ping
++[2024-07-07 17:55:03,869] [INFO] ping
++[2024-07-07 17:55:33,879] [INFO] ping
++[2024-07-07 17:56:03,893] [INFO] ping
++[2024-07-07 17:56:33,899] [INFO] ping
++[2024-07-07 17:57:03,913] [INFO] ping
++[2024-07-07 17:57:33,935] [INFO] ping
++[2024-07-07 17:58:03,949] [INFO] ping
++[2024-07-07 17:58:33,952] [INFO] ping
++[2024-07-07 17:59:03,964] [INFO] ping
++[2024-07-07 17:59:33,976] [INFO] ping
++[2024-07-07 18:00:03,985] [INFO] ping
++[2024-07-07 18:00:33,983] [INFO] ping
++[2024-07-07 18:01:03,983] [INFO] ping
++[2024-07-07 18:01:33,993] [INFO] ping
++[2024-07-07 18:02:04,014] [INFO] ping
++[2024-07-07 18:02:34,036] [INFO] ping
++[2024-07-07 18:03:04,048] [INFO] ping
++[2024-07-07 18:03:34,065] [INFO] ping
++[2024-07-07 18:04:04,063] [INFO] ping
++[2024-07-07 18:04:34,065] [INFO] ping
++[2024-07-07 18:05:04,062] [INFO] ping
++[2024-07-07 18:05:34,091] [INFO] ping
++[2024-07-07 18:06:04,094] [INFO] ping
++[2024-07-07 18:06:34,103] [INFO] ping
++[2024-07-07 18:07:04,122] [INFO] ping
++[2024-07-07 18:07:34,127] [INFO] ping
++[2024-07-07 18:08:04,144] [INFO] ping
++[2024-07-07 18:08:34,143] [INFO] ping
++[2024-07-07 18:09:04,148] [INFO] ping
++[2024-07-07 18:09:34,163] [INFO] ping
++[2024-07-07 18:10:04,186] [INFO] ping
++[2024-07-07 18:10:34,189] [INFO] ping
++[2024-07-07 18:11:04,189] [INFO] ping
++[2024-07-07 18:11:34,213] [INFO] ping
++[2024-07-07 18:12:04,226] [INFO] ping
++[2024-07-07 18:12:34,243] [INFO] ping
++[2024-07-07 18:13:04,249] [INFO] ping
++[2024-07-07 18:13:34,250] [INFO] ping
++[2024-07-07 18:14:04,261] [INFO] ping
++[2024-07-07 18:14:34,266] [INFO] ping
++[2024-07-07 18:15:04,285] [INFO] ping
++[2024-07-07 18:15:34,295] [INFO] ping
++[2024-07-07 18:16:04,308] [INFO] ping
++[2024-07-07 18:16:34,321] [INFO] ping
++[2024-07-07 18:17:04,334] [INFO] ping
++[2024-07-07 18:17:34,339] [INFO] ping
++[2024-07-07 18:18:04,353] [INFO] ping
++[2024-07-07 18:18:34,363] [INFO] ping
++[2024-07-07 18:19:04,367] [INFO] ping
++[2024-07-07 18:19:34,384] [INFO] ping
++[2024-07-07 18:20:04,399] [INFO] ping
++[2024-07-07 18:20:34,417] [INFO] ping
++[2024-07-07 18:21:04,439] [INFO] ping
++[2024-07-07 18:21:34,446] [INFO] ping
++[2024-07-07 18:22:04,453] [INFO] ping
++[2024-07-07 18:22:34,461] [INFO] ping
++[2024-07-07 18:23:04,476] [INFO] ping
++[2024-07-07 18:23:34,484] [INFO] ping
++[2024-07-07 18:24:04,488] [INFO] ping
++[2024-07-07 18:24:34,490] [INFO] ping
++[2024-07-07 18:25:04,508] [INFO] ping
++[2024-07-07 18:25:34,528] [INFO] ping
++[2024-07-07 18:26:04,533] [INFO] ping
++[2024-07-07 18:26:34,533] [INFO] ping
++[2024-07-07 18:27:04,551] [INFO] ping
++[2024-07-07 18:27:34,565] [INFO] ping
++[2024-07-07 18:28:04,572] [INFO] ping
++[2024-07-07 18:28:34,585] [INFO] ping
++[2024-07-07 18:29:04,598] [INFO] ping
++[2024-07-07 18:29:34,618] [INFO] ping
++[2024-07-07 18:30:04,630] [INFO] ping
++[2024-07-07 18:30:34,635] [INFO] ping
++[2024-07-07 18:31:04,645] [INFO] ping
++[2024-07-07 18:31:34,669] [INFO] ping
++[2024-07-07 18:32:04,673] [INFO] ping
++[2024-07-07 18:32:34,683] [INFO] ping
++[2024-07-07 18:33:04,696] [INFO] ping
++[2024-07-07 18:33:34,712] [INFO] ping
++[2024-07-07 18:34:04,723] [INFO] ping
++[2024-07-07 18:34:34,723] [INFO] ping
++[2024-07-07 18:35:04,728] [INFO] ping
++[2024-07-07 18:35:34,745] [INFO] ping
++[2024-07-07 18:36:04,761] [INFO] ping
++[2024-07-07 18:36:34,778] [INFO] ping
++[2024-07-07 18:37:04,796] [INFO] ping
++[2024-07-07 18:37:34,821] [INFO] ping
++[2024-07-07 18:38:04,843] [INFO] ping
++[2024-07-07 18:38:34,848] [INFO] ping
++[2024-07-07 18:39:04,866] [INFO] ping
++[2024-07-07 18:39:34,888] [INFO] ping
++[2024-07-07 18:40:04,893] [INFO] ping
++[2024-07-07 18:40:34,902] [INFO] ping
++[2024-07-07 18:41:04,911] [INFO] ping
++[2024-07-07 18:41:34,916] [INFO] ping
++[2024-07-07 18:42:04,939] [INFO] ping
++[2024-07-07 18:42:34,945] [INFO] ping
++[2024-07-07 18:43:04,969] [INFO] ping
++[2024-07-07 18:43:34,974] [INFO] ping
++[2024-07-07 18:44:04,986] [INFO] ping
++[2024-07-07 18:44:34,990] [INFO] ping
++[2024-07-07 18:45:05,000] [INFO] ping
++[2024-07-07 18:45:35,017] [INFO] ping
++[2024-07-07 18:46:05,022] [INFO] ping
++[2024-07-07 18:46:35,041] [INFO] ping
++[2024-07-07 18:47:05,061] [INFO] ping
++[2024-07-07 18:47:35,074] [INFO] ping
++[2024-07-07 18:48:05,084] [INFO] ping
++[2024-07-07 18:48:35,104] [INFO] ping
++[2024-07-07 18:49:05,124] [INFO] ping
++[2024-07-07 18:49:35,129] [INFO] ping
++[2024-07-07 18:50:05,141] [INFO] ping
++[2024-07-07 18:50:35,164] [INFO] ping
++[2024-07-07 18:51:05,177] [INFO] ping
++[2024-07-07 18:51:35,192] [INFO] ping
++[2024-07-07 18:52:05,210] [INFO] ping
++[2024-07-07 18:52:35,230] [INFO] ping
++[2024-07-07 18:53:05,238] [INFO] ping
++[2024-07-07 18:53:35,268] [INFO] ping
++[2024-07-07 18:54:05,266] [INFO] ping
++[2024-07-07 18:54:35,275] [INFO] ping
++[2024-07-07 18:55:05,295] [INFO] ping
++[2024-07-07 18:55:35,309] [INFO] ping
++[2024-07-07 18:56:05,334] [INFO] ping
++[2024-07-07 18:56:35,355] [INFO] ping
++[2024-07-07 18:57:05,361] [INFO] ping
++[2024-07-07 18:57:35,374] [INFO] ping
++[2024-07-07 18:58:05,383] [INFO] ping
++[2024-07-07 18:58:35,405] [INFO] ping
++[2024-07-07 18:59:05,432] [INFO] ping
++[2024-07-07 18:59:35,442] [INFO] ping
++[2024-07-07 19:00:05,443] [INFO] ping
++[2024-07-07 19:00:35,459] [INFO] ping
++[2024-07-07 19:01:05,478] [INFO] ping
++[2024-07-07 19:01:35,491] [INFO] ping
++[2024-07-07 19:02:05,503] [INFO] ping
++[2024-07-07 19:02:35,512] [INFO] ping
++[2024-07-07 19:03:05,515] [INFO] ping
++[2024-07-07 19:03:35,517] [INFO] ping
++[2024-07-07 19:04:05,533] [INFO] ping
++[2024-07-07 19:04:35,537] [INFO] ping
++[2024-07-07 19:05:05,557] [INFO] ping
++[2024-07-07 19:05:35,575] [INFO] ping
++[2024-07-07 19:06:05,582] [INFO] ping
++[2024-07-07 19:06:35,588] [INFO] ping
++[2024-07-07 19:07:05,606] [INFO] ping
++[2024-07-07 19:07:35,614] [INFO] ping
++[2024-07-07 19:08:05,642] [INFO] ping
++[2024-07-07 19:08:35,647] [INFO] ping
++[2024-07-07 19:09:05,661] [INFO] ping
++[2024-07-07 19:09:35,670] [INFO] ping
++[2024-07-07 19:10:05,682] [INFO] ping
++[2024-07-07 19:10:35,690] [INFO] ping
++[2024-07-07 19:11:05,699] [INFO] ping
++[2024-07-07 19:11:35,714] [INFO] ping
++[2024-07-07 19:12:05,720] [INFO] ping
++[2024-07-07 19:12:35,737] [INFO] ping
++[2024-07-07 19:13:05,743] [INFO] ping
++[2024-07-07 19:13:35,759] [INFO] ping
++[2024-07-07 19:14:05,782] [INFO] ping
++[2024-07-07 19:14:35,785] [INFO] ping
++[2024-07-07 19:15:05,795] [INFO] ping
++[2024-07-07 19:15:35,802] [INFO] ping
++[2024-07-07 19:16:05,828] [INFO] ping
++[2024-07-07 19:16:35,839] [INFO] ping
++[2024-07-07 19:17:05,857] [INFO] ping
++[2024-07-07 19:17:35,863] [INFO] ping
++[2024-07-07 19:18:05,870] [INFO] ping
++[2024-07-07 19:18:35,881] [INFO] ping
++[2024-07-07 19:19:05,910] [INFO] ping
++[2024-07-07 19:19:35,950] [INFO] ping
++[2024-07-07 19:20:05,975] [INFO] ping
++[2024-07-07 19:20:35,989] [INFO] ping
++[2024-07-07 19:21:05,990] [INFO] ping
++[2024-07-07 19:21:36,014] [INFO] ping
++[2024-07-07 19:22:06,029] [INFO] ping
++[2024-07-07 19:22:36,038] [INFO] ping
++[2024-07-07 19:23:06,065] [INFO] ping
++[2024-07-07 19:23:36,075] [INFO] ping
++[2024-07-07 19:24:06,089] [INFO] ping
++[2024-07-07 19:24:36,113] [INFO] ping
++[2024-07-07 19:25:06,139] [INFO] ping
++[2024-07-07 19:25:36,152] [INFO] ping
++[2024-07-07 19:26:06,161] [INFO] ping
++[2024-07-07 19:26:36,170] [INFO] ping
++[2024-07-07 19:27:06,179] [INFO] ping
++[2024-07-07 19:27:36,202] [INFO] ping
++[2024-07-07 19:28:06,217] [INFO] ping
++[2024-07-07 19:28:36,244] [INFO] ping
++[2024-07-07 19:29:06,254] [INFO] ping
++[2024-07-07 19:29:36,285] [INFO] ping
++[2024-07-07 19:30:06,286] [INFO] ping
++[2024-07-07 19:30:36,306] [INFO] ping
++[2024-07-07 19:31:06,318] [INFO] ping
++[2024-07-07 19:31:36,335] [INFO] ping
++[2024-07-07 19:32:06,366] [INFO] ping
++[2024-07-07 19:32:36,397] [INFO] ping
++[2024-07-07 19:33:06,411] [INFO] ping
++[2024-07-07 19:33:36,409] [INFO] ping
++[2024-07-07 19:34:06,436] [INFO] ping
++[2024-07-07 19:34:36,446] [INFO] ping
++[2024-07-07 19:35:06,452] [INFO] ping
++[2024-07-07 19:35:36,462] [INFO] ping
++[2024-07-07 19:36:06,474] [INFO] ping
++[2024-07-07 19:36:36,495] [INFO] ping
++[2024-07-07 19:37:06,522] [INFO] ping
++[2024-07-07 19:37:36,550] [INFO] ping
++[2024-07-07 19:38:06,561] [INFO] ping
++[2024-07-07 19:38:36,571] [INFO] ping
++[2024-07-07 19:39:06,592] [INFO] ping
++[2024-07-07 19:39:36,596] [INFO] ping
++[2024-07-07 19:40:06,605] [INFO] ping
++[2024-07-07 19:40:36,611] [INFO] ping
++[2024-07-07 19:41:06,638] [INFO] ping
++[2024-07-07 19:41:36,660] [INFO] ping
++[2024-07-07 19:42:06,665] [INFO] ping
++[2024-07-07 19:42:36,676] [INFO] ping
++[2024-07-07 19:43:06,692] [INFO] ping
++[2024-07-07 19:43:36,719] [INFO] ping
++[2024-07-07 19:44:06,733] [INFO] ping
++[2024-07-07 19:44:36,751] [INFO] ping
++[2024-07-07 19:45:06,762] [INFO] ping
++[2024-07-07 19:45:36,778] [INFO] ping
++[2024-07-07 19:46:06,800] [INFO] ping
++[2024-07-07 19:46:36,798] [INFO] ping
++[2024-07-07 19:47:06,803] [INFO] ping
++[2024-07-07 19:47:36,828] [INFO] ping
++[2024-07-07 19:48:06,835] [INFO] ping
++[2024-07-07 19:48:36,866] [INFO] ping
++[2024-07-07 19:49:06,900] [INFO] ping
++[2024-07-07 19:49:36,919] [INFO] ping
++[2024-07-07 19:50:06,933] [INFO] ping
++[2024-07-07 19:50:36,959] [INFO] ping
++[2024-07-07 19:51:06,969] [INFO] ping
++[2024-07-07 19:51:36,993] [INFO] ping
++[2024-07-07 19:52:07,019] [INFO] ping
++[2024-07-07 19:52:37,045] [INFO] ping
++[2024-07-07 19:53:07,063] [INFO] ping
++[2024-07-07 19:53:37,068] [INFO] ping
++[2024-07-07 19:54:07,100] [INFO] ping
++[2024-07-07 19:54:37,119] [INFO] ping
++[2024-07-07 19:55:07,132] [INFO] ping
++[2024-07-07 19:55:37,164] [INFO] ping
++[2024-07-07 19:56:07,179] [INFO] ping
++[2024-07-07 19:56:37,203] [INFO] ping
++[2024-07-07 19:57:07,208] [INFO] ping
++[2024-07-07 19:57:37,217] [INFO] ping
++[2024-07-07 19:58:07,226] [INFO] ping
++[2024-07-07 19:58:37,247] [INFO] ping
++[2024-07-07 19:59:07,261] [INFO] ping
++[2024-07-07 19:59:37,282] [INFO] ping
++[2024-07-07 20:00:07,288] [INFO] ping
++[2024-07-07 20:00:37,311] [INFO] ping
++[2024-07-07 20:01:07,312] [INFO] ping
++[2024-07-07 20:01:37,320] [INFO] ping
++[2024-07-07 20:02:07,351] [INFO] ping
++[2024-07-07 20:02:37,369] [INFO] ping
++[2024-07-07 20:03:07,397] [INFO] ping
++[2024-07-07 20:03:37,418] [INFO] ping
++[2024-07-07 20:04:07,424] [INFO] ping
++[2024-07-07 20:04:37,421] [INFO] ping
++[2024-07-07 20:05:07,441] [INFO] ping
++[2024-07-07 20:05:37,442] [INFO] ping
++[2024-07-07 20:06:07,466] [INFO] ping
++[2024-07-07 20:06:37,491] [INFO] ping
++[2024-07-07 20:07:07,503] [INFO] ping
++[2024-07-07 20:07:37,506] [INFO] ping
++[2024-07-07 20:08:07,523] [INFO] ping
++[2024-07-07 20:08:37,545] [INFO] ping
++[2024-07-07 20:09:07,554] [INFO] ping
++[2024-07-07 20:09:37,584] [INFO] ping
++[2024-07-07 20:10:07,605] [INFO] ping
++[2024-07-07 20:10:37,623] [INFO] ping
++[2024-07-07 20:11:07,646] [INFO] ping
++[2024-07-07 20:11:37,667] [INFO] ping
++[2024-07-07 20:12:07,689] [INFO] ping
++[2024-07-07 20:12:37,710] [INFO] ping
++[2024-07-07 20:13:07,725] [INFO] ping
++[2024-07-07 20:13:37,746] [INFO] ping
++[2024-07-07 20:14:07,761] [INFO] ping
++[2024-07-07 20:14:37,780] [INFO] ping
++[2024-07-07 20:15:07,795] [INFO] ping
++[2024-07-07 20:15:37,807] [INFO] ping
++[2024-07-07 20:16:07,818] [INFO] ping
++[2024-07-07 20:16:37,830] [INFO] ping
++[2024-07-07 20:17:07,838] [INFO] ping
++[2024-07-07 20:17:37,855] [INFO] ping
++[2024-07-07 20:18:07,881] [INFO] ping
++[2024-07-07 20:18:37,894] [INFO] ping
++[2024-07-07 20:19:07,905] [INFO] ping
++[2024-07-07 20:19:37,905] [INFO] ping
++[2024-07-07 20:20:07,914] [INFO] ping
++[2024-07-07 20:20:37,927] [INFO] ping
++[2024-07-07 20:21:07,941] [INFO] ping
++[2024-07-07 20:21:37,942] [INFO] ping
++[2024-07-07 20:22:07,945] [INFO] ping
++[2024-07-07 20:22:37,961] [INFO] ping
++[2024-07-07 20:23:07,982] [INFO] ping
++[2024-07-07 20:23:37,996] [INFO] ping
++[2024-07-07 20:24:08,004] [INFO] ping
++[2024-07-07 20:24:38,011] [INFO] ping
++[2024-07-07 20:25:08,026] [INFO] ping
++[2024-07-07 20:25:38,030] [INFO] ping
++[2024-07-07 20:26:08,041] [INFO] ping
++[2024-07-07 20:26:38,052] [INFO] ping
++[2024-07-07 20:27:08,058] [INFO] ping
++[2024-07-07 20:27:38,077] [INFO] ping
++[2024-07-07 20:28:08,105] [INFO] ping
++[2024-07-07 20:28:38,120] [INFO] ping
++[2024-07-07 20:29:08,144] [INFO] ping
++[2024-07-07 20:29:38,157] [INFO] ping
++[2024-07-07 20:30:08,159] [INFO] ping
++[2024-07-07 20:30:38,162] [INFO] ping
++[2024-07-07 20:31:08,179] [INFO] ping
++[2024-07-07 20:31:38,200] [INFO] ping
++[2024-07-07 20:32:08,215] [INFO] ping
++[2024-07-07 20:32:38,228] [INFO] ping
++[2024-07-07 20:33:08,240] [INFO] ping
++[2024-07-07 20:33:38,260] [INFO] ping
++[2024-07-07 20:34:08,293] [INFO] ping
++[2024-07-07 20:34:38,314] [INFO] ping
++[2024-07-07 20:35:08,321] [INFO] ping
++[2024-07-07 20:35:38,336] [INFO] ping
++[2024-07-07 20:36:08,341] [INFO] ping
++[2024-07-07 20:36:38,351] [INFO] ping
++[2024-07-07 20:37:08,367] [INFO] ping
++[2024-07-07 20:37:38,387] [INFO] ping
++[2024-07-07 20:38:08,395] [INFO] ping
++[2024-07-07 20:38:38,417] [INFO] ping
++[2024-07-07 20:39:08,430] [INFO] ping
++[2024-07-07 20:39:38,439] [INFO] ping
++[2024-07-07 20:40:08,460] [INFO] ping
++[2024-07-07 20:40:38,479] [INFO] ping
++[2024-07-07 20:41:08,490] [INFO] ping
++[2024-07-07 20:41:38,508] [INFO] ping
++[2024-07-07 20:42:08,530] [INFO] ping
++[2024-07-07 20:42:38,529] [INFO] ping
++[2024-07-07 20:43:08,534] [INFO] ping
++[2024-07-07 20:43:38,543] [INFO] ping
++[2024-07-07 20:44:08,560] [INFO] ping
++[2024-07-07 20:44:38,576] [INFO] ping
++[2024-07-07 20:45:08,585] [INFO] ping
++[2024-07-07 20:45:38,610] [INFO] ping
++[2024-07-07 20:46:08,630] [INFO] ping
++[2024-07-07 20:46:38,630] [INFO] ping
++[2024-07-07 20:47:08,649] [INFO] ping
++[2024-07-07 20:47:38,657] [INFO] ping
++[2024-07-07 20:48:08,664] [INFO] ping
++[2024-07-07 20:48:38,673] [INFO] ping
++[2024-07-07 20:49:08,693] [INFO] ping
++[2024-07-07 20:49:38,708] [INFO] ping
++[2024-07-07 20:50:08,710] [INFO] ping
++[2024-07-07 20:50:38,724] [INFO] ping
++[2024-07-07 20:51:08,724] [INFO] ping
++[2024-07-07 20:51:38,731] [INFO] ping
++[2024-07-07 20:52:08,757] [INFO] ping
++[2024-07-07 20:52:38,767] [INFO] ping
++[2024-07-07 20:53:08,789] [INFO] ping
++[2024-07-07 20:53:38,824] [INFO] ping
++[2024-07-07 20:54:08,843] [INFO] ping
++[2024-07-07 20:54:38,846] [INFO] ping
++[2024-07-07 20:55:08,864] [INFO] ping
++[2024-07-07 20:55:38,892] [INFO] ping
++[2024-07-07 20:56:08,911] [INFO] ping
++[2024-07-07 20:56:38,929] [INFO] ping
++[2024-07-07 20:57:08,945] [INFO] ping
++[2024-07-07 20:57:38,958] [INFO] ping
++[2024-07-07 20:58:08,950] [INFO] ping
++[2024-07-07 20:58:38,976] [INFO] ping
++[2024-07-07 20:59:08,999] [INFO] ping
++[2024-07-07 20:59:39,011] [INFO] ping
++[2024-07-07 21:00:09,028] [INFO] ping
++[2024-07-07 21:00:39,041] [INFO] ping
++[2024-07-07 21:01:09,046] [INFO] ping
++[2024-07-07 21:01:39,051] [INFO] ping
++[2024-07-07 21:02:09,061] [INFO] ping
++[2024-07-07 21:02:39,073] [INFO] ping
++[2024-07-07 21:03:09,098] [INFO] ping
++[2024-07-07 21:03:39,114] [INFO] ping
++[2024-07-07 21:04:09,116] [INFO] ping
++[2024-07-07 21:04:39,127] [INFO] ping
++[2024-07-07 21:05:09,152] [INFO] ping
++[2024-07-07 21:05:39,163] [INFO] ping
++[2024-07-07 21:06:09,181] [INFO] ping
++[2024-07-07 21:06:39,200] [INFO] ping
++[2024-07-07 21:07:09,208] [INFO] ping
++[2024-07-07 21:07:39,233] [INFO] ping
++[2024-07-07 21:08:09,238] [INFO] ping
++[2024-07-07 21:08:39,255] [INFO] ping
++[2024-07-07 21:09:09,288] [INFO] ping
++[2024-07-07 21:09:39,319] [INFO] ping
++[2024-07-07 21:10:09,332] [INFO] ping
++[2024-07-07 21:10:39,345] [INFO] ping
++[2024-07-07 21:11:09,363] [INFO] ping
++[2024-07-07 21:11:39,375] [INFO] ping
++[2024-07-07 21:12:09,397] [INFO] ping
++[2024-07-07 21:12:39,414] [INFO] ping
++[2024-07-07 21:13:09,439] [INFO] ping
++[2024-07-07 21:13:39,461] [INFO] ping
++[2024-07-07 21:14:09,491] [INFO] ping
++[2024-07-07 21:14:39,523] [INFO] ping
++[2024-07-07 21:15:09,521] [INFO] ping
++[2024-07-07 21:15:39,546] [INFO] ping
++[2024-07-07 21:16:09,556] [INFO] ping
++[2024-07-07 21:16:39,564] [INFO] ping
++[2024-07-07 21:17:09,582] [INFO] ping
++[2024-07-07 21:17:39,595] [INFO] ping
++[2024-07-07 21:18:09,620] [INFO] ping
++[2024-07-07 21:18:39,629] [INFO] ping
++[2024-07-07 21:19:09,626] [INFO] ping
++[2024-07-07 21:19:39,641] [INFO] ping
++[2024-07-07 21:20:09,663] [INFO] ping
++[2024-07-07 21:20:39,694] [INFO] ping
++[2024-07-07 21:21:09,707] [INFO] ping
++[2024-07-07 21:21:39,707] [INFO] ping
++[2024-07-07 21:22:09,706] [INFO] ping
++[2024-07-07 21:22:39,737] [INFO] ping
++[2024-07-07 21:23:09,746] [INFO] ping
++[2024-07-07 21:23:39,775] [INFO] ping
++[2024-07-07 21:24:09,788] [INFO] ping
++[2024-07-07 21:24:39,797] [INFO] ping
++[2024-07-07 21:25:09,808] [INFO] ping
++[2024-07-07 21:25:39,840] [INFO] ping
++[2024-07-07 21:26:09,864] [INFO] ping
++[2024-07-07 21:26:39,871] [INFO] ping
++[2024-07-07 21:27:09,883] [INFO] ping
++[2024-07-07 21:27:39,917] [INFO] ping
++[2024-07-07 21:28:09,930] [INFO] ping
++[2024-07-07 21:28:39,950] [INFO] ping
++[2024-07-07 21:29:09,975] [INFO] ping
++[2024-07-07 21:29:40,004] [INFO] ping
++[2024-07-07 21:30:10,002] [INFO] ping
++[2024-07-07 21:30:40,011] [INFO] ping
++[2024-07-07 21:31:10,017] [INFO] ping
++[2024-07-07 21:31:40,037] [INFO] ping
++[2024-07-07 21:32:10,044] [INFO] ping
++[2024-07-07 21:32:40,050] [INFO] ping
++[2024-07-07 21:33:10,065] [INFO] ping
++[2024-07-07 21:33:40,083] [INFO] ping
++[2024-07-07 21:34:10,088] [INFO] ping
++[2024-07-07 21:34:40,116] [INFO] ping
++[2024-07-07 21:35:10,130] [INFO] ping
++[2024-07-07 21:35:40,137] [INFO] ping
++[2024-07-07 21:36:10,158] [INFO] ping
++[2024-07-07 21:36:40,158] [INFO] ping
++[2024-07-07 21:37:10,154] [INFO] ping
++[2024-07-07 21:37:40,165] [INFO] ping
++[2024-07-07 21:38:10,195] [INFO] ping
++[2024-07-07 21:38:40,221] [INFO] ping
++[2024-07-07 21:39:10,239] [INFO] ping
++[2024-07-07 21:39:40,247] [INFO] ping
++[2024-07-07 21:40:07,590] [INFO] ��֤�룺892829
++[2024-07-07 21:40:10,269] [INFO] ping
++[2024-07-07 21:40:40,281] [INFO] ping
++[2024-07-07 21:41:02,667] [INFO] ��֤�룺270555
++[2024-07-07 21:41:10,303] [INFO] ping
++[2024-07-07 21:41:40,309] [INFO] ping
++[2024-07-07 21:42:10,332] [INFO] ping
++[2024-07-07 21:42:40,332] [INFO] ping
++[2024-07-07 21:43:10,344] [INFO] ping
++[2024-07-07 21:43:40,357] [INFO] ping
++[2024-07-07 21:44:10,382] [INFO] ping
++[2024-07-07 21:44:40,382] [INFO] ping
++[2024-07-07 21:44:45,656] [INFO] ��֤�룺944505
++[2024-07-07 21:45:10,413] [INFO] ping
++[2024-07-07 21:45:39,191] [INFO] ��֤�룺449191
++[2024-07-07 21:45:40,432] [INFO] ping
++[2024-07-07 21:46:10,445] [INFO] ping
++[2024-07-07 21:46:40,453] [INFO] ping
++[2024-07-07 21:47:10,474] [INFO] ping
++[2024-07-07 21:47:40,480] [INFO] ping
++[2024-07-07 21:48:10,500] [INFO] ping
++[2024-07-07 21:48:40,530] [INFO] ping
++[2024-07-07 21:49:10,515] [INFO] ping
++[2024-07-07 21:49:40,535] [INFO] ping
++[2024-07-07 21:50:10,535] [INFO] ping
++[2024-07-07 21:50:40,554] [INFO] ping
++[2024-07-07 21:51:10,568] [INFO] ping
++[2024-07-07 21:51:40,580] [INFO] ping
++[2024-07-07 21:52:10,586] [INFO] ping
++[2024-07-07 21:52:40,603] [INFO] ping
++[2024-07-07 21:53:10,629] [INFO] ping
++[2024-07-07 21:53:40,640] [INFO] ping
++[2024-07-07 21:54:10,667] [INFO] ping
++[2024-07-07 21:54:40,685] [INFO] ping
++[2024-07-07 21:55:10,686] [INFO] ping
++[2024-07-07 21:55:40,692] [INFO] ping
++[2024-07-07 21:56:10,693] [INFO] ping
++[2024-07-07 21:56:40,709] [INFO] ping
++[2024-07-07 21:57:10,706] [INFO] ping
++[2024-07-07 21:57:40,725] [INFO] ping
++[2024-07-07 21:58:10,751] [INFO] ping
++[2024-07-07 21:58:45,786] [INFO] COJ Judger Powered by Python
++[2024-07-07 21:58:45,788] [INFO] �������ݿ�...
++[2024-07-07 21:58:45,791] [INFO] ��ʼ��robots...
++[2024-07-07 21:58:45,792] [INFO] ����judger����...
++[2024-07-07 21:58:45,793] [INFO] ע��judger����...
++[2024-07-07 21:58:45,868] [INFO] judger�����������
++[2024-07-07 22:00:21,442] [INFO] COJ Judger Powered by Python
++[2024-07-07 22:00:21,444] [INFO] �������ݿ�...
++[2024-07-07 22:00:21,447] [INFO] ��ʼ��robots...
++[2024-07-07 22:00:21,449] [INFO] ����judger����...
++[2024-07-07 22:00:21,450] [INFO] ע��judger����...
++[2024-07-07 22:00:21,466] [ERROR] {'code': 102, 'message': 'Ŀ��judger�ѱ�ע��'}
++[2024-07-07 22:00:21,466] [ERROR] ע��judger����ʧ��
++[2024-07-07 22:01:37,302] [INFO] COJ Judger Powered by Python
++[2024-07-07 22:01:37,313] [INFO] �������ݿ�...
++[2024-07-07 22:01:37,316] [INFO] ��ʼ��robots...
++[2024-07-07 22:01:37,317] [INFO] ����judger����...
++[2024-07-07 22:01:37,318] [INFO] ע��judger����...
++[2024-07-07 22:01:37,332] [INFO] judger�����������
+Index: log/2024-07-18.log
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/log/2024-07-18.log b/log/2024-07-18.log
+new file mode 100644
+--- /dev/null	(date 1721290996243)
++++ b/log/2024-07-18.log	(date 1721290996243)
+@@ -0,0 +1,14 @@
++[2024-07-18 12:29:54,384] [INFO] COJ Judger Powered by Python
++[2024-07-18 12:29:54,385] [INFO] �������ݿ�...
++[2024-07-18 12:29:54,389] [INFO] ��ʼ��robots...
++[2024-07-18 12:29:54,391] [INFO] ����judger����...
++[2024-07-18 12:29:54,392] [INFO] ע��judger����...
++[2024-07-18 12:29:54,418] [ERROR] {'code': 105, 'message': 'Exception Class: java.lang.NullPointerException\nError Message: Cannot invoke "org.springframework.core.env.Environment.getProperty(String)" because "com.gcteamo.oi.utils.COJUtil.env" is null\nStack Trace:\n    at com.gcteamo.oi.utils.COJUtil.getString(COJUtil.java:31)\n    at com.gcteamo.oi.interceptors.JudgerInterceptor.preHandle(JudgerInterceptor.java:16)\n    at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:146)\n    at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)\n    at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)\n    at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)\n    at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)\n    at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)\n    at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)\n    at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)\n    at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)\n    at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\n    at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)\n    at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)\n    at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\n    at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\n    at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n    at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)\n    at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\n    at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\n    at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n    at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)\n    at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\n    at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:107)\n    at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n    at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)\n    at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\n    at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\n    at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n    at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)\n    at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\n    at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)\n    at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)\n    at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)\n    at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)\n    at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)\n    at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)\n    at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)\n    at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)\n    at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\n    at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)\n    at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)\n    at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\n    at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)\n    at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\n    at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)\n    at java.base/java.lang.Thread.run(Thread.java:1570)'}
++[2024-07-18 12:29:54,419] [ERROR] ע��judger����ʧ��
++[2024-07-18 12:43:08,056] [INFO] COJ Judger Powered by Python
++[2024-07-18 12:43:08,058] [INFO] �������ݿ�...
++[2024-07-18 12:43:08,061] [INFO] ��ʼ��robots...
++[2024-07-18 12:43:08,061] [INFO] ����judger����...
++[2024-07-18 12:43:08,062] [INFO] ע��judger����...
++[2024-07-18 12:43:08,264] [INFO] judger�����������
++[2024-07-18 16:23:16,241] [INFO] ��֤�룺816059
+Index: log/2024-07-19.log
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/log/2024-07-19.log b/log/2024-07-19.log
+new file mode 100644
+--- /dev/null	(date 1721385065407)
++++ b/log/2024-07-19.log	(date 1721385065407)
+@@ -0,0 +1,6 @@
++[2024-07-19 18:31:05,181] [INFO] COJ Judger Powered by Python
++[2024-07-19 18:31:05,181] [INFO] �������ݿ�...
++[2024-07-19 18:31:05,184] [INFO] ��ʼ��robots...
++[2024-07-19 18:31:05,186] [INFO] ����judger����...
++[2024-07-19 18:31:05,186] [INFO] ע��judger����...
++[2024-07-19 18:31:05,407] [INFO] judger�����������
+Index: log/2024-07-20.log
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/log/2024-07-20.log b/log/2024-07-20.log
+new file mode 100644
+--- /dev/null	(date 1721480687094)
++++ b/log/2024-07-20.log	(date 1721480687094)
+@@ -0,0 +1,6 @@
++[2024-07-20 21:04:46,646] [INFO] COJ Judger Powered by Python
++[2024-07-20 21:04:46,648] [INFO] �������ݿ�...
++[2024-07-20 21:04:46,706] [INFO] ��ʼ��robots...
++[2024-07-20 21:04:46,775] [INFO] ����judger����...
++[2024-07-20 21:04:46,777] [INFO] ע��judger����...
++[2024-07-20 21:04:47,093] [INFO] judger�����������
+Index: log/2024-07-21.log
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/log/2024-07-21.log b/log/2024-07-21.log
+new file mode 100644
+--- /dev/null	(date 1721562348575)
++++ b/log/2024-07-21.log	(date 1721562348575)
+@@ -0,0 +1,62 @@
++[2024-07-21 17:35:03,571] [INFO] COJ Judger Powered by Python
++[2024-07-21 17:35:03,573] [INFO] �������ݿ�...
++[2024-07-21 17:35:03,577] [INFO] ��ʼ��robots...
++[2024-07-21 17:35:03,584] [INFO] ����judger����...
++[2024-07-21 17:35:03,585] [INFO] ע��judger����...
++[2024-07-21 17:35:03,666] [INFO] judger�����������
++[2024-07-21 17:49:00,457] [INFO] COJ Judger Powered by Python
++[2024-07-21 17:49:00,459] [INFO] �������ݿ�...
++[2024-07-21 17:49:00,467] [INFO] ��ʼ��robots...
++[2024-07-21 17:49:00,473] [INFO] ����judger����...
++[2024-07-21 17:49:00,475] [INFO] ע��judger����...
++[2024-07-21 17:49:00,706] [INFO] judger�����������
++[2024-07-21 17:49:06,141] [INFO] COJ Judger Powered by Python
++[2024-07-21 17:49:06,143] [INFO] �������ݿ�...
++[2024-07-21 17:49:06,147] [INFO] ��ʼ��robots...
++[2024-07-21 17:49:06,149] [INFO] ����judger����...
++[2024-07-21 17:49:06,150] [INFO] ע��judger����...
++[2024-07-21 17:49:06,163] [ERROR] {'code': 102, 'message': 'jid�Ѿ���ռ�á�'}
++[2024-07-21 17:49:06,164] [ERROR] ע��judger����ʧ��
++[2024-07-21 17:49:17,352] [INFO] COJ Judger Powered by Python
++[2024-07-21 17:49:17,353] [INFO] �������ݿ�...
++[2024-07-21 17:49:17,359] [INFO] ��ʼ��robots...
++[2024-07-21 17:49:17,362] [INFO] ����judger����...
++[2024-07-21 17:49:17,363] [INFO] ע��judger����...
++[2024-07-21 17:49:17,380] [INFO] judger�����������
++[2024-07-21 17:50:18,341] [INFO] COJ Judger Powered by Python
++[2024-07-21 17:50:18,342] [INFO] �������ݿ�...
++[2024-07-21 17:50:18,347] [INFO] ��ʼ��robots...
++[2024-07-21 17:50:18,351] [INFO] ����judger����...
++[2024-07-21 17:50:18,352] [INFO] ע��judger����...
++[2024-07-21 17:50:18,423] [INFO] judger�����������
++[2024-07-21 17:52:26,566] [INFO] COJ Judger Powered by Python
++[2024-07-21 17:52:26,569] [INFO] �������ݿ�...
++[2024-07-21 17:52:26,573] [INFO] ��ʼ��robots...
++[2024-07-21 17:52:26,578] [INFO] ����judger����...
++[2024-07-21 17:52:26,579] [INFO] ע��judger����...
++[2024-07-21 17:52:26,627] [INFO] judger�����������
++[2024-07-21 18:09:51,627] [INFO] COJ Judger Powered by Python
++[2024-07-21 18:09:51,628] [INFO] �������ݿ�...
++[2024-07-21 18:09:51,631] [INFO] ��ʼ��robots...
++[2024-07-21 18:09:51,634] [INFO] ����judger����...
++[2024-07-21 18:09:51,636] [INFO] ע��judger����...
++[2024-07-21 18:09:51,704] [INFO] judger�����������
++[2024-07-21 19:01:52,868] [INFO] COJ Judger Powered by Python
++[2024-07-21 19:01:52,870] [INFO] �������ݿ�...
++[2024-07-21 19:01:52,878] [INFO] ��ʼ��robots...
++[2024-07-21 19:01:52,897] [INFO] ����judger����...
++[2024-07-21 19:01:52,899] [INFO] ע��judger����...
++[2024-07-21 19:01:53,063] [INFO] judger�����������
++[2024-07-21 19:03:47,923] [INFO] COJ Judger Powered by Python
++[2024-07-21 19:03:47,924] [INFO] �������ݿ�...
++[2024-07-21 19:03:47,928] [INFO] ��ʼ��robots...
++[2024-07-21 19:03:47,930] [INFO] ����judger����...
++[2024-07-21 19:03:47,931] [INFO] ע��judger����...
++[2024-07-21 19:03:48,095] [INFO] judger�����������
++[2024-07-21 19:44:42,635] [INFO] COJ Judger Powered by Python
++[2024-07-21 19:44:42,637] [INFO] �������ݿ�...
++[2024-07-21 19:44:42,645] [INFO] ��ʼ��robots...
++[2024-07-21 19:44:42,664] [INFO] ����judger����...
++[2024-07-21 19:44:42,666] [INFO] ע��judger����...
++[2024-07-21 19:44:42,905] [INFO] judger�����������
++[2024-07-21 19:45:48,575] [INFO] ��֤�룺801386
+Index: log/2024-07-22.log
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/log/2024-07-22.log b/log/2024-07-22.log
+new file mode 100644
+--- /dev/null	(date 1721620142885)
++++ b/log/2024-07-22.log	(date 1721620142885)
+@@ -0,0 +1,169 @@
++[2024-07-22 09:55:10,151] [INFO] COJ Judger Powered by Python
++[2024-07-22 09:55:10,154] [INFO] �������ݿ�...
++[2024-07-22 09:55:10,165] [INFO] ��ʼ��robots...
++[2024-07-22 09:55:10,173] [INFO] ����judger����...
++[2024-07-22 09:55:10,175] [INFO] ע��judger����...
++[2024-07-22 09:55:10,259] [INFO] judger�����������
++[2024-07-22 10:11:08,758] [INFO] COJ Judger Powered by Python
++[2024-07-22 10:11:08,760] [INFO] �������ݿ�...
++[2024-07-22 10:11:08,765] [INFO] ��ʼ��robots...
++[2024-07-22 10:11:08,768] [INFO] ����judger����...
++[2024-07-22 10:11:08,769] [INFO] ע��judger����...
++[2024-07-22 10:11:08,825] [INFO] judger�����������
++[2024-07-22 10:14:54,953] [INFO] COJ Judger Powered by Python
++[2024-07-22 10:14:54,955] [INFO] �������ݿ�...
++[2024-07-22 10:14:54,960] [INFO] ��ʼ��robots...
++[2024-07-22 10:14:54,965] [INFO] ����judger����...
++[2024-07-22 10:14:54,966] [INFO] ע��judger����...
++[2024-07-22 10:14:55,048] [INFO] judger�����������
++[2024-07-22 10:29:51,945] [INFO] COJ Judger Powered by Python
++[2024-07-22 10:29:51,948] [INFO] �������ݿ�...
++[2024-07-22 10:29:51,994] [INFO] ��ʼ��robots...
++[2024-07-22 10:29:52,019] [INFO] ����judger����...
++[2024-07-22 10:29:52,020] [INFO] ע��judger����...
++[2024-07-22 10:29:52,330] [INFO] judger�����������
++[2024-07-22 10:38:35,717] [INFO] COJ Judger Powered by Python
++[2024-07-22 10:38:35,719] [INFO] �������ݿ�...
++[2024-07-22 10:38:35,723] [INFO] ��ʼ��robots...
++[2024-07-22 10:38:35,727] [INFO] ����judger����...
++[2024-07-22 10:38:35,729] [INFO] ע��judger����...
++[2024-07-22 10:38:35,748] [INFO] judger�����������
++[2024-07-22 10:40:18,276] [INFO] COJ Judger Powered by Python
++[2024-07-22 10:40:18,282] [INFO] �������ݿ�...
++[2024-07-22 10:40:18,287] [INFO] ��ʼ��robots...
++[2024-07-22 10:40:18,291] [INFO] ����judger����...
++[2024-07-22 10:40:18,292] [INFO] ע��judger����...
++[2024-07-22 10:40:18,311] [INFO] judger�����������
++[2024-07-22 10:41:40,290] [INFO] COJ Judger Powered by Python
++[2024-07-22 10:41:40,293] [INFO] �������ݿ�...
++[2024-07-22 10:41:40,299] [INFO] ��ʼ��robots...
++[2024-07-22 10:41:40,304] [INFO] ����judger����...
++[2024-07-22 10:41:40,305] [INFO] ע��judger����...
++[2024-07-22 10:41:40,321] [ERROR] {'code': 102, 'message': 'jid�Ѿ���ռ�á�'}
++[2024-07-22 10:41:40,323] [ERROR] ע��judger����ʧ��
++[2024-07-22 10:41:48,617] [INFO] COJ Judger Powered by Python
++[2024-07-22 10:41:48,620] [INFO] �������ݿ�...
++[2024-07-22 10:41:48,626] [INFO] ��ʼ��robots...
++[2024-07-22 10:41:48,630] [INFO] ����judger����...
++[2024-07-22 10:41:48,633] [INFO] ע��judger����...
++[2024-07-22 10:41:48,652] [INFO] judger�����������
++[2024-07-22 10:42:57,138] [INFO] COJ Judger Powered by Python
++[2024-07-22 10:42:57,168] [INFO] �������ݿ�...
++[2024-07-22 10:42:57,172] [INFO] ��ʼ��robots...
++[2024-07-22 10:42:57,179] [INFO] ����judger����...
++[2024-07-22 10:42:57,180] [INFO] ע��judger����...
++[2024-07-22 10:42:57,197] [INFO] judger�����������
++[2024-07-22 10:45:32,683] [INFO] ��֤�룺199212
++[2024-07-22 10:46:53,911] [INFO] ���⣺{'rid': '13', 'code': 'dsfghjkl;kjhgfd', 'index': [{'id': 1, 'jid': 'my', 'target': 'remote 1', 'nth': 1, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 2, 'jid': 'my', 'target': 'remote 1', 'nth': 2, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 3, 'jid': 'my', 'target': 'remote 1', 'nth': 3, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 4, 'jid': 'my', 'target': 'remote 1', 'nth': 4, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}]}
++[2024-07-22 10:46:53,911] [INFO] ���⣺{'id': 1, 'jid': 'my', 'target': 'remote 1', 'nth': 1, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:04:03,575] [INFO] COJ Judger Powered by Python
++[2024-07-22 11:04:03,577] [INFO] �������ݿ�...
++[2024-07-22 11:04:03,594] [INFO] ��ʼ��robots...
++[2024-07-22 11:04:03,597] [INFO] ����judger����...
++[2024-07-22 11:04:20,438] [INFO] COJ Judger Powered by Python
++[2024-07-22 11:04:20,442] [INFO] �������ݿ�...
++[2024-07-22 11:04:20,448] [INFO] ��ʼ��robots...
++[2024-07-22 11:04:20,451] [INFO] ����judger����...
++[2024-07-22 11:04:20,452] [INFO] ע��judger����...
++[2024-07-22 11:04:20,471] [ERROR] {'code': 102, 'message': 'jid�Ѿ���ռ�á�'}
++[2024-07-22 11:04:20,472] [ERROR] ע��judger����ʧ��
++[2024-07-22 11:04:36,911] [INFO] COJ Judger Powered by Python
++[2024-07-22 11:04:36,915] [INFO] �������ݿ�...
++[2024-07-22 11:04:36,920] [INFO] ��ʼ��robots...
++[2024-07-22 11:04:36,923] [INFO] ����judger����...
++[2024-07-22 11:04:36,924] [INFO] ע��judger����...
++[2024-07-22 11:04:36,946] [INFO] judger�����������
++[2024-07-22 11:06:42,483] [INFO] ��֤�룺276258
++[2024-07-22 11:07:13,325] [INFO] �������{'rid': '13', 'code': 'dsfghjkl;kjhgfd', 'index': [{'id': 1, 'jid': 'my', 'target': 'remote 1', 'nth': 1, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 2, 'jid': 'my', 'target': 'remote 1', 'nth': 2, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 3, 'jid': 'my', 'target': 'remote 1', 'nth': 3, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 4, 'jid': 'my', 'target': 'remote 1', 'nth': 4, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}]}
++[2024-07-22 11:07:13,325] [INFO] ���⣺{'id': 1, 'jid': 'my', 'target': 'remote 1', 'nth': 1, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:07:14,343] [INFO] ���⣺{'id': 2, 'jid': 'my', 'target': 'remote 1', 'nth': 2, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:07:16,370] [INFO] ���⣺{'id': 3, 'jid': 'my', 'target': 'remote 1', 'nth': 3, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:07:17,391] [INFO] ���⣺{'id': 4, 'jid': 'my', 'target': 'remote 1', 'nth': 4, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:07:20,428] [INFO] 13 �������
++[2024-07-22 11:12:39,786] [INFO] COJ Judger Powered by Python
++[2024-07-22 11:12:39,789] [INFO] �������ݿ�...
++[2024-07-22 11:12:39,795] [INFO] ��ʼ��robots...
++[2024-07-22 11:12:39,799] [INFO] ����judger����...
++[2024-07-22 11:12:39,800] [INFO] ע��judger����...
++[2024-07-22 11:12:39,818] [ERROR] {'code': 102, 'message': 'jid�Ѿ���ռ�á�'}
++[2024-07-22 11:12:39,818] [ERROR] ע��judger����ʧ��
++[2024-07-22 11:14:26,215] [INFO] COJ Judger Powered by Python
++[2024-07-22 11:14:26,218] [INFO] �������ݿ�...
++[2024-07-22 11:14:26,223] [INFO] ��ʼ��robots...
++[2024-07-22 11:14:26,227] [INFO] ����judger����...
++[2024-07-22 11:14:26,228] [INFO] ע��judger����...
++[2024-07-22 11:14:26,251] [INFO] judger�����������
++[2024-07-22 11:15:09,092] [INFO] �������{'rid': '13', 'code': 'dsfghjkl;kjhgfd', 'index': [{'id': 1, 'jid': 'my', 'target': 'remote 1', 'nth': 1, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 2, 'jid': 'my', 'target': 'remote 1', 'nth': 2, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 3, 'jid': 'my', 'target': 'remote 1', 'nth': 3, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 4, 'jid': 'my', 'target': 'remote 1', 'nth': 4, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}]}
++[2024-07-22 11:15:09,093] [INFO] ���⣺{'id': 1, 'jid': 'my', 'target': 'remote 1', 'nth': 1, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:15:10,117] [INFO] ���⣺{'id': 2, 'jid': 'my', 'target': 'remote 1', 'nth': 2, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:15:12,150] [INFO] ���⣺{'id': 3, 'jid': 'my', 'target': 'remote 1', 'nth': 3, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:15:15,162] [INFO] ���⣺{'id': 4, 'jid': 'my', 'target': 'remote 1', 'nth': 4, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:15:18,265] [INFO] 13 �������
++[2024-07-22 11:27:42,538] [INFO] COJ Judger Powered by Python
++[2024-07-22 11:27:42,541] [INFO] �������ݿ�...
++[2024-07-22 11:27:42,620] [INFO] ��ʼ��robots...
++[2024-07-22 11:27:42,644] [INFO] ����judger����...
++[2024-07-22 11:27:42,647] [INFO] ע��judger����...
++[2024-07-22 11:27:42,695] [INFO] judger�����������
++[2024-07-22 11:27:50,696] [INFO] �������{'rid': '15', 'code': 'sdfghjgfdf', 'index': [{'id': 1, 'jid': 'my', 'target': 'remote 1', 'nth': 1, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 2, 'jid': 'my', 'target': 'remote 1', 'nth': 2, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 3, 'jid': 'my', 'target': 'remote 1', 'nth': 3, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 4, 'jid': 'my', 'target': 'remote 1', 'nth': 4, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}]}
++[2024-07-22 11:27:50,696] [INFO] ���⣺{'id': 1, 'jid': 'my', 'target': 'remote 1', 'nth': 1, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:27:51,719] [INFO] ���⣺{'id': 2, 'jid': 'my', 'target': 'remote 1', 'nth': 2, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:27:53,734] [INFO] ���⣺{'id': 3, 'jid': 'my', 'target': 'remote 1', 'nth': 3, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:27:54,760] [INFO] ���⣺{'id': 4, 'jid': 'my', 'target': 'remote 1', 'nth': 4, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:27:59,897] [INFO] 15 �������
++[2024-07-22 11:39:41,820] [INFO] �������{'rid': '16', 'code': 'sdfghjkl;kjhgfds', 'index': [{'id': 1, 'jid': 'my', 'target': 'remote 1', 'nth': 1, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 2, 'jid': 'my', 'target': 'remote 1', 'nth': 2, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 3, 'jid': 'my', 'target': 'remote 1', 'nth': 3, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 4, 'jid': 'my', 'target': 'remote 1', 'nth': 4, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}]}
++[2024-07-22 11:39:41,821] [INFO] ���⣺{'id': 1, 'jid': 'my', 'target': 'remote 1', 'nth': 1, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:39:43,829] [INFO] ���⣺{'id': 2, 'jid': 'my', 'target': 'remote 1', 'nth': 2, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:39:46,848] [INFO] ���⣺{'id': 3, 'jid': 'my', 'target': 'remote 1', 'nth': 3, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:39:49,896] [INFO] ���⣺{'id': 4, 'jid': 'my', 'target': 'remote 1', 'nth': 4, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:39:53,976] [INFO] 16 �������
++[2024-07-22 11:42:07,484] [INFO] COJ Judger Powered by Python
++[2024-07-22 11:42:07,486] [INFO] �������ݿ�...
++[2024-07-22 11:42:07,528] [INFO] ��ʼ��robots...
++[2024-07-22 11:42:07,536] [INFO] ����judger����...
++[2024-07-22 11:42:07,537] [INFO] ע��judger����...
++[2024-07-22 11:42:07,557] [ERROR] {'code': 102, 'message': 'jid�Ѿ���ռ�á�'}
++[2024-07-22 11:42:07,558] [ERROR] ע��judger����ʧ��
++[2024-07-22 11:42:10,836] [INFO] COJ Judger Powered by Python
++[2024-07-22 11:42:10,838] [INFO] �������ݿ�...
++[2024-07-22 11:42:10,845] [INFO] ��ʼ��robots...
++[2024-07-22 11:42:10,849] [INFO] ����judger����...
++[2024-07-22 11:42:10,851] [INFO] ע��judger����...
++[2024-07-22 11:42:10,868] [ERROR] {'code': 102, 'message': 'jid�Ѿ���ռ�á�'}
++[2024-07-22 11:42:10,868] [ERROR] ע��judger����ʧ��
++[2024-07-22 11:42:16,733] [INFO] COJ Judger Powered by Python
++[2024-07-22 11:42:16,736] [INFO] �������ݿ�...
++[2024-07-22 11:42:16,742] [INFO] ��ʼ��robots...
++[2024-07-22 11:42:16,747] [INFO] ����judger����...
++[2024-07-22 11:42:16,748] [INFO] ע��judger����...
++[2024-07-22 11:42:16,780] [INFO] judger�����������
++[2024-07-22 11:42:28,116] [INFO] �������{'rid': '17', 'code': 'sadfghm,.jhgfdgh', 'index': [{'id': 1, 'jid': 'my', 'target': 'remote 1', 'nth': 1, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 2, 'jid': 'my', 'target': 'remote 1', 'nth': 2, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 3, 'jid': 'my', 'target': 'remote 1', 'nth': 3, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 4, 'jid': 'my', 'target': 'remote 1', 'nth': 4, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}]}
++[2024-07-22 11:42:28,117] [INFO] ���⣺{'id': 1, 'jid': 'my', 'target': 'remote 1', 'nth': 1, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:42:35,134] [INFO] ���⣺{'id': 2, 'jid': 'my', 'target': 'remote 1', 'nth': 2, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:42:40,160] [INFO] ���⣺{'id': 3, 'jid': 'my', 'target': 'remote 1', 'nth': 3, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:42:45,175] [INFO] ���⣺{'id': 4, 'jid': 'my', 'target': 'remote 1', 'nth': 4, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:42:54,292] [INFO] 17 �������
++[2024-07-22 11:43:51,792] [INFO] �������{'rid': '18', 'code': 'asdfghjkhgfd', 'index': [{'id': 1, 'jid': 'my', 'target': 'remote 1', 'nth': 1, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 2, 'jid': 'my', 'target': 'remote 1', 'nth': 2, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 3, 'jid': 'my', 'target': 'remote 1', 'nth': 3, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 4, 'jid': 'my', 'target': 'remote 1', 'nth': 4, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}]}
++[2024-07-22 11:43:51,792] [INFO] ���⣺{'id': 1, 'jid': 'my', 'target': 'remote 1', 'nth': 1, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:44:26,505] [INFO] ���⣺{'id': 2, 'jid': 'my', 'target': 'remote 1', 'nth': 2, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:45:52,734] [INFO] ���⣺{'id': 3, 'jid': 'my', 'target': 'remote 1', 'nth': 3, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:46:03,016] [INFO] ���⣺{'id': 4, 'jid': 'my', 'target': 'remote 1', 'nth': 4, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:46:10,036] [INFO] 18 �������
++[2024-07-22 11:47:07,018] [INFO] COJ Judger Powered by Python
++[2024-07-22 11:47:07,021] [INFO] �������ݿ�...
++[2024-07-22 11:47:07,026] [INFO] ��ʼ��robots...
++[2024-07-22 11:47:07,032] [INFO] ����judger����...
++[2024-07-22 11:47:07,034] [INFO] ע��judger����...
++[2024-07-22 11:47:07,105] [INFO] judger�����������
++[2024-07-22 11:47:13,554] [INFO] �������{'rid': '19', 'code': 'asdfghjkljhgfdsa', 'index': [{'id': 1, 'jid': 'my', 'target': 'remote 1', 'nth': 1, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 2, 'jid': 'my', 'target': 'remote 1', 'nth': 2, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 3, 'jid': 'my', 'target': 'remote 1', 'nth': 3, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 4, 'jid': 'my', 'target': 'remote 1', 'nth': 4, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}]}
++[2024-07-22 11:47:13,555] [INFO] ���⣺{'id': 1, 'jid': 'my', 'target': 'remote 1', 'nth': 1, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:47:23,333] [INFO] ���⣺{'id': 2, 'jid': 'my', 'target': 'remote 1', 'nth': 2, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:47:28,367] [INFO] ���⣺{'id': 3, 'jid': 'my', 'target': 'remote 1', 'nth': 3, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:47:36,406] [INFO] ���⣺{'id': 4, 'jid': 'my', 'target': 'remote 1', 'nth': 4, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:47:44,547] [INFO] 19 �������
++[2024-07-22 11:48:35,721] [INFO] �������{'rid': '20', 'code': 'sadfghjkl;kjhgfds', 'index': [{'id': 1, 'jid': 'my', 'target': 'remote 1', 'nth': 1, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 2, 'jid': 'my', 'target': 'remote 1', 'nth': 2, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 3, 'jid': 'my', 'target': 'remote 1', 'nth': 3, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}, {'id': 4, 'jid': 'my', 'target': 'remote 1', 'nth': 4, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}]}
++[2024-07-22 11:48:35,721] [INFO] ���⣺{'id': 1, 'jid': 'my', 'target': 'remote 1', 'nth': 1, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:48:42,725] [INFO] ���⣺{'id': 2, 'jid': 'my', 'target': 'remote 1', 'nth': 2, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:48:50,753] [INFO] ���⣺{'id': 3, 'jid': 'my', 'target': 'remote 1', 'nth': 3, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:48:55,768] [INFO] ���⣺{'id': 4, 'jid': 'my', 'target': 'remote 1', 'nth': 4, 'extra': '', 'score': 25, 'memoryLimit': 524288, 'timeLimit': 1000}
++[2024-07-22 11:49:02,884] [INFO] 20 �������
+diff --git a/log/2024-07-06 14 b/log/2024-07-06 14
+new file mode 100644

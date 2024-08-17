@@ -1,5 +1,4 @@
-import asyncio
-from typing import Optional, Dict
+from typing import Optional, Dict, List
 
 import aiohttp
 from aiohttp import ClientSession
@@ -9,6 +8,7 @@ import utils
 from logger import logger
 
 # 向coj服务端通信的api
+# 当前会话
 session: Optional[ClientSession] = None
 
 
@@ -55,18 +55,9 @@ async def register() -> bool:
         if r.status == 200:
             data = await r.json()
             if data["code"] == 200:
-                # 启动ping任务
-                asyncio.gather(ping())
                 return True
             logger.error(data)
         return False
-
-
-async def ping() -> None:
-    while True:
-        # logger.info("ping")
-        await get("/ping", {"jid": config.jid})
-        await asyncio.sleep(config.ping_time)
 
 
 # 向评测记录添加日志
@@ -75,14 +66,16 @@ async def log(rid: int, message: str, color: str) -> None:
 
 
 # 更新测试点信息
-async def update(rid: int, id: int,
-                 status: Optional[int] = None,
-                 message: Optional[str] = None,
-                 score: Optional[int] = None,
-                 runTime: Optional[int] = None,
-                 runMem: Optional[int] = None
-                 ) -> None:
-    data = {"rid": rid, "id": id}
+async def update(
+        rid: int,
+        ids: List[int],
+        status: Optional[int] = None,
+        message: Optional[str] = None,
+        score: Optional[int] = None,
+        runTime: Optional[int] = None,
+        runMem: Optional[int] = None
+) -> None:
+    data = {"rid": rid, "ids": utils.array_to_text(ids)}
     if status is not None:
         data["status"] = status
     if message is not None:

@@ -1,5 +1,8 @@
 import traceback
+import socket
+from typing import List
 
+from constants import *
 from aiohttp import web
 
 import config
@@ -32,9 +35,9 @@ def get_exception_details(exception) -> str:
 
 def response_ok(data=None):
     if data is None:
-        return web.json_response({"code": config.response_status_ok})
+        return web.json_response({"code": response_status_ok})
     else:
-        return web.json_response({"code": config.response_status_ok, "data": data})
+        return web.json_response({"code": response_status_ok, "data": data})
 
 
 def response_code(code: int):
@@ -42,11 +45,11 @@ def response_code(code: int):
 
 
 def response_error(message: str):
-    return web.json_response({"code": config.response_status_error, "message": message})
+    return web.json_response({"code": response_status_error, "message": message})
 
 
 def response_message(message: str):
-    return web.json_response({"code": config.response_status_msg, "message": message})
+    return web.json_response({"code": response_status_msg, "message": message})
 
 
 def format_number(num):
@@ -71,3 +74,23 @@ def get_mem_text(num):
         return f"{num}KB"
     else:
         return f"{format_number(num / 1024)}MB"
+
+
+def array_to_text(arr: List[int]) -> str:
+    flag = False
+    res = ''
+    for i in arr:
+        # Uncomment the line below if you want to print debug information
+        # print("aa", i)
+        if not flag:
+            res += str(i)
+            flag = True
+        else:
+            res += "," + str(i)
+    return res
+
+
+def get_free_port():
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        s.bind(('localhost', 0))  # Bind to any available port on localhost
+        return s.getsockname()[1]  # Return the port number

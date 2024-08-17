@@ -1,79 +1,67 @@
-# 一些业务代码
+# 返回robot信息列表
 import asyncio
-import random
-from dataclasses import asdict
+import uuid
+from typing import List
 
-import api
-import utils
-from entry import COJException, CheckpointsPackage, Robot
+import aiohttp
+
 import config
-from logger import logger
-from typing import Dict, List, Optional
+from constants import robot_status_no_user, robot_status_destroy
+from entity import RobotDTO, Robot
 
 
-# 这里写爬虫获取验证码
-# 返回验证码图片的链接
-async def verify(robot: Robot) -> str:
-    return ""
+async def robot_list() -> List:
+    res = []
+    for i in config.robots.values():
+        res.append(RobotDTO(i.status, i.username, i.uuid))
+    return res
 
 
-# 爬虫的登录实现
-# code为验证码，如果你的judger的type不为1可以忽略
-# init为是否为judger初始化时执行的
-async def login(robot: Robot, code: Optional[str] = None, init: bool = False) -> None:
-    if robot.username == 'test':
-        raise COJException("密码错误。")
-    # 初始化judger执行该函数的时候不提供code，所以会直接命中该条件
-    if code != "114514":
-        raise COJException("验证码错误。")
-
-    # 这里写爬虫发起登录请求
-
-    # 登录成功时此代码必加，将会设置robot登录信息及状态，且robot信息将会被存到数据库中
-    if init is False:
-        await config.robot_after_login(robot)
+# 返回新建robot的uuid，同时也注册到config里了
+async def robot_create() -> str:
+    new_robot = Robot(str(uuid.uuid4()))
+    new_robot.queue = asyncio.Queue()
+    new_robot.session = aiohttp.ClientSession()
+    config.robots[new_robot.uuid] = new_robot
+    return new_robot.uuid
 
 
-# 处理评测请求
-async def handle(robot: Robot, pack: CheckpointsPackage) -> None:
-    # 关于异常处理：我理想地认为调用coj服务端接口是不会发生错误的
-    # 先将该评测包下的测试点都置为judging
-    for checkpoint in pack.index:
-        await api.update(pack.rid, checkpoint.id, config.checkpoint_status_judging)
-    try:
-        # 这里写爬虫代码
-        await asyncio.sleep(random.randint(5, 8))
-        # 置测试点状态为ac
-        for checkpoint in pack.index:
-            runMem = random.randint(1024, 10240)
-            runTime = random.randint(80, 300)
-            await api.update(
-                pack.rid,
-                checkpoint.id,
-                config.checkpoint_status_se,
-                f"{utils.get_time_text(runTime)}/{utils.get_mem_text(runMem)}",
-                100,
-                runTime,
-                runMem
-            )
-    except Exception as e:
-        # 提交日志
-        logger.error(f"[{config.jid}-{robot.username}] 评测测试点时发生错误：\n {utils.get_exception_details(e)}。")
-        await api.log(
-            pack.rid,
-            f"[{config.jid}-{robot.username}] 评测测试点时发生错误：\n {utils.get_exception_details(e)}。",
-            "red"
-        )
-        # 置所有测试点状态为se
-        for checkpoint in pack.index:
-            await api.update(pack.rid, checkpoint.id, config.checkpoint_status_se, "")
+# 删除一个robot
+async def robot_delete(uuid: str) -> None:
+    robot = config.robots[uuid]
+    if robot.status != robot_status_no_user:
+        await config.database_conn.execute("delete from tb_user where username = '{}'".format(robot.username))
+        await config.database_conn.commit()
+    robot.status = robot_status_destroy
+    config.robots.pop(uuid)
 
 
-# 保活任务
-async def keepalive():
-    while True:
-        await asyncio.sleep(config.keepalive_time)
-        for i in config.robots.values():
-            if i.status >= 1:
-                # 这里可以调爬虫，然后写保活的措施
-                pass
+# ------------------------题目揽收相关----------------------
+
+
+# 允许题目被所有robot揽收
+async def link_all(pid: str) -> None:
+    # 全部删除就相当于都可以揽收
+    await config.database_conn.execute("delete from tb_link where pid = '{}'".format(pid))
+    await config.database_conn.commit()
+
+
+# 添加题目可被揽收的robot
+async def link_add(pid: str, robot: str) -> None:
+    await config.database_conn.execute("insert into tb_link(pid, username) values ({}, {})".format(pid, robot))
+    await config.database_conn.commit()
+
+
+# 删除题目可被揽收的robot
+async def link_remove(pid: str, robot: str) -> None:
+    await config.database_conn.execute("delete from tb_link where pid = '{}' and username = '{}'".format(pid, robot))
+    await config.database_conn.commit()
+
+
+# 列出题目可被揽收的robot，如果为空则为题目可被所有的robot揽收
+async def link_list(pid: str) -> List:
+    _list = []
+    async with config.database_conn.execute("select * from tb_link where pid = '{}'".format(pid)) as cursor:
+        async for item in cursor:
+            _list.append(item[1])
+    return _list

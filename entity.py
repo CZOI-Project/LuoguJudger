@@ -2,8 +2,7 @@ import asyncio
 from dataclasses import dataclass
 from typing import Optional, List
 from aiohttp import ClientSession
-
-from config import robot_status_no_user
+from constants import *
 
 
 @dataclass
@@ -31,10 +30,27 @@ class Robot:
 
 
 @dataclass
+class RobotDTO:
+    """RobotDTO"""
+    """当前状态，-3-仅创建，未绑定账号密码
+    -2-登录需要验证
+    -1-发生错误（登陆时出错，密码错误等）
+    0-离线
+    1-在线，准备就绪
+    2-正在评测
+    """
+    status: int
+    """爬虫账号"""
+    username: str
+    """唯一标识符"""
+    uuid: str
+
+
+@dataclass
 class Trace:
     """Trace"""
     """测试点编号"""
-    id: int
+    ids: List[int]
     """状态，0-成功被揽收
     1-目标judger未上线
     2-没有可用的robot
@@ -45,8 +61,6 @@ class Trace:
     username: Optional[str] = None
     """揽收的robot的uuid，status为0时可用"""
     uuid: Optional[str] = None
-    """status为3时可用"""
-    message: Optional[str] = None
 
 
 # 抛出的信息将会返回给coj服务端
@@ -64,7 +78,7 @@ class CheckpointToProblem:
     """该测试点所用到的judger的id"""
     jid: str
     """内存限制，单位kb，注意，内存和时间限制需要与远程题目对应的一致，否则无法达到效果"""
-    memoryLimit: int
+    memLimit: int
     """远程题目测试点编号"""
     nth: int
     """该测试点分数"""
@@ -80,3 +94,20 @@ class CheckpointsPackage:
     rid: int
     code: str
     index: List[CheckpointToProblem]
+
+
+@dataclass
+class RobotDTO:
+    """RobotDTO"""
+    """当前状态，-3-仅创建，未绑定账号密码
+    -2-登录需要验证
+    -1-发生错误（登陆时出错，密码错误等）
+    0-离线
+    1-在线，准备就绪
+    2-正在评测
+    """
+    status: int
+    """爬虫账号"""
+    username: str
+    """唯一标识符"""
+    uuid: str
