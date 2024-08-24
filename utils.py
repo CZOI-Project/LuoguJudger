@@ -1,3 +1,4 @@
+import hashlib
 import traceback
 import socket
 from typing import List
@@ -94,3 +95,23 @@ def get_free_port():
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.bind(('localhost', 0))  # Bind to any available port on localhost
         return s.getsockname()[1]  # Return the port number
+
+
+def get_md5_hash(input_string):
+    """
+    生成给定字符串的MD5散列值。
+
+    参数:
+    input_string (str): 要散列的字符串。
+
+    返回:
+    str: MD5散列值。
+    """
+    # 创建一个md5散列对象
+    m = hashlib.md5()
+
+    # 更新散列对象以包含字符串
+    m.update(input_string.encode('utf-8'))
+
+    # 获取MD5散列值
+    return m.hexdigest()

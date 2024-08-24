@@ -1,9 +1,11 @@
 # 返回robot信息列表
 import asyncio
+import json
 import uuid
 from typing import List
 
 import aiohttp
+from aiohttp import TCPConnector
 
 import config
 from constants import robot_status_no_user, robot_status_destroy
@@ -21,7 +23,12 @@ async def robot_list() -> List:
 async def robot_create() -> str:
     new_robot = Robot(str(uuid.uuid4()))
     new_robot.queue = asyncio.Queue()
-    new_robot.session = aiohttp.ClientSession()
+    new_robot.jar = aiohttp.CookieJar(unsafe=True)
+    new_robot.session = aiohttp.ClientSession(
+        connector=TCPConnector(ssl=False),
+        json_serialize=json.dumps,
+        cookie_jar=new_robot.jar
+    )
     config.robots[new_robot.uuid] = new_robot
     return new_robot.uuid
 

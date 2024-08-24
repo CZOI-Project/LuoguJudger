@@ -2,7 +2,9 @@
 -- 存放robot信息的表
 create table if not exists tb_user(
     username varchar(255) not null,
-    password varchar(255) not null
+    password varchar(255) not null,
+    client_id varchar(255) not null,
+    uid varchar(255) not null
 );
 
 -- 设置pid可被哪一个robot揽收

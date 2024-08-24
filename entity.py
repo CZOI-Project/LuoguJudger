@@ -23,6 +23,10 @@ class Robot:
     """
     status: int = robot_status_no_user
     """以下字段仅judger中存在"""
+    """luogu"""
+    token: Optional[str] = None
+    client_id: Optional[str] = None
+    uid: Optional[str] = None
     """judger对应的connection"""
     session: Optional[ClientSession] = None
     """评测队列"""
@@ -111,3 +115,10 @@ class RobotDTO:
     username: str
     """唯一标识符"""
     uuid: str
+
+
+class RefList:
+    data: List[int]
+
+    def __init__(self, data: List[int]):
+        self.data = data
